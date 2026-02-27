@@ -37,13 +37,13 @@
     <HomeServicesPreviewSection />
 
     <!-- Delicatessen Teaser Section -->
-    <HomeDelicatessenTeaserSection />
+    <DelicatessenTeaserSection />
 
     <!-- Access Stories Section -->
-    <HomeAccessStoriesSection />
+    <AccessStoriesSection />
 
     <!-- Contact CTA Section -->
-    <HomeContactCtaSection />
+    <ContactCtaSection />
   </div>
 </template>
 
@@ -57,9 +57,9 @@
 useHead({
   title: 'Thames&Tokyo - Curating the inaccessible',
   meta: [
-    { 
-      name: 'description', 
-      content: 'Your bridge to Japan\'s hidden market. We unlock access to exclusive Japanese suppliers through cultural expertise and trusted relationships built over 15+ years.' 
+    {
+      name: 'description',
+      content: 'Your bridge to Japan\'s hidden market. We unlock access to exclusive Japanese suppliers through cultural expertise and trusted relationships built over 15+ years.'
     },
     // Open Graph específico para Home
     { property: 'og:title', content: 'Thames&Tokyo - Curating the inaccessible' },
@@ -79,7 +79,7 @@ useHead({
   script: [
     {
       type: 'application/ld+json',
-      children: JSON.stringify({
+      innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Organization',
         name: 'Thames&Tokyo',

@@ -24,7 +24,7 @@
     <HomeServicesPreviewSection />
 
     <!-- Contact CTA -->
-    <HomeContactCtaSection />
+    <ContactCtaSection />
   </div>
 </template>
 

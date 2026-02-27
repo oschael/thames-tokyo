@@ -37,7 +37,6 @@ defineProps<Props>()
 // SCROLL REVEAL
 // ============================================
 const isRevealed = ref(false)
-const sectionRef = ref<HTMLElement | null>(null)
 
 onMounted(() => {
   // Usar setTimeout para activar después del mount

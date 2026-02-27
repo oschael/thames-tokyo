@@ -48,7 +48,7 @@ export function useScrollReveal(options: ScrollRevealOptions = {}) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             isRevealed.value = true
-            
+
             // Si once es true, dejar de observar después de revelar
             if (once && observer) {
               observer.unobserve(entry.target)
@@ -100,12 +100,12 @@ export function useScrollRevealMultiple(
   options: ScrollRevealOptions & { staggerDelay?: number } = {}
 ) {
   const { staggerDelay = 100, ...observerOptions } = options
-  
+
   const elements = ref<(HTMLElement | null)[]>(Array(count).fill(null))
   const revealed = ref<boolean[]>(Array(count).fill(false))
 
   onMounted(() => {
-    elements.value.forEach((el, index) => {
+    elements.value.forEach((el: HTMLElement | null, index: number) => {
       if (!el) return
 
       const observer = new IntersectionObserver(
@@ -116,7 +116,7 @@ export function useScrollRevealMultiple(
               setTimeout(() => {
                 revealed.value[index] = true
               }, index * staggerDelay)
-              
+
               observer.unobserve(entry.target)
             }
           })

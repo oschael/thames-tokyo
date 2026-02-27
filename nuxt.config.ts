@@ -136,6 +136,7 @@ export default defineNuxtConfig({
     prerender: {
       routes: ['/'],
       crawlLinks: true,
+      failOnError: false, // No fallar por rutas que aún no existen (ej: /terms, /privacy)
     },
     // Compresión
     compressPublicAssets: true,

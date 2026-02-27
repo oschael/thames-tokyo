@@ -1,0 +1,16 @@
+// ============================================
+// ANIMATIONS - Scroll reveals and transitions
+// ============================================
+@use '../vars/variables' as *;
+
+// Scroll Reveal
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+
+    &.revealed {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all $transition-slow;
+    }
+}

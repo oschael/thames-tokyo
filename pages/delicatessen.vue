@@ -21,13 +21,11 @@
     </section>
 
     <!-- Products -->
-    <HomeDelicatessenTeaserSection />
+    <DelicatessenTeaserSection />
 
     <!-- Contact CTA -->
-    <HomeContactCtaSection 
-      title="Interested in our products?"
-      description="Contact us for availability and wholesale inquiries."
-    />
+    <ContactCtaSection title="Interested in our products?"
+      description="Contact us for availability and wholesale inquiries." />
   </div>
 </template>
 

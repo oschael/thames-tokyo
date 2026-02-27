@@ -31,70 +31,41 @@
             <h2 class="font-display text-2xl font-semibold text-gray-900 mb-8">
               Send us a message
             </h2>
-            
+
             <form @submit.prevent="handleSubmit" class="space-y-6">
               <!-- Name -->
               <div class="form-group">
                 <label for="name" class="form-label">Full Name *</label>
-                <input
-                  id="name"
-                  v-model="form.name"
-                  type="text"
-                  class="form-input"
-                  :class="{ 'error': errors.name }"
-                  placeholder="Your full name"
-                  required
-                >
+                <input id="name" v-model="form.name" type="text" class="form-input" :class="{ 'error': errors.name }"
+                  placeholder="Your full name" required>
                 <p v-if="errors.name" class="form-error">{{ errors.name }}</p>
               </div>
 
               <!-- Email -->
               <div class="form-group">
                 <label for="email" class="form-label">Email Address *</label>
-                <input
-                  id="email"
-                  v-model="form.email"
-                  type="email"
-                  class="form-input"
-                  :class="{ 'error': errors.email }"
-                  placeholder="your@email.com"
-                  required
-                >
+                <input id="email" v-model="form.email" type="email" class="form-input"
+                  :class="{ 'error': errors.email }" placeholder="your@email.com" required>
                 <p v-if="errors.email" class="form-error">{{ errors.email }}</p>
               </div>
 
               <!-- Company -->
               <div class="form-group">
                 <label for="company" class="form-label">Company</label>
-                <input
-                  id="company"
-                  v-model="form.company"
-                  type="text"
-                  class="form-input"
-                  placeholder="Your company name"
-                >
+                <input id="company" v-model="form.company" type="text" class="form-input"
+                  placeholder="Your company name">
               </div>
 
               <!-- Message -->
               <div class="form-group">
                 <label for="message" class="form-label">Message *</label>
-                <textarea
-                  id="message"
-                  v-model="form.message"
-                  class="form-input min-h-[150px] resize-y"
-                  :class="{ 'error': errors.message }"
-                  placeholder="Tell us about your access challenge..."
-                  required
-                />
+                <textarea id="message" v-model="form.message" class="form-input min-h-[150px] resize-y"
+                  :class="{ 'error': errors.message }" placeholder="Tell us about your access challenge..." required />
                 <p v-if="errors.message" class="form-error">{{ errors.message }}</p>
               </div>
 
               <!-- Submit -->
-              <button
-                type="submit"
-                class="submit-btn"
-                :disabled="isSubmitting"
-              >
+              <button type="submit" class="submit-btn" :disabled="isSubmitting">
                 <span v-if="!isSubmitting">Send Message</span>
                 <span v-else class="loading-text">
                   <span class="loading-spinner" />
@@ -117,15 +88,12 @@
             <h2 class="font-display text-2xl font-semibold text-gray-900 mb-8">
               Or reach us directly
             </h2>
-            
+
             <div class="space-y-8">
               <!-- Email -->
               <div class="contact-info-card">
                 <h3 class="font-display text-lg font-semibold mb-2">Email</h3>
-                <a 
-                  :href="`mailto:${contactEmail}`"
-                  class="text-accent hover:underline"
-                >
+                <a :href="`mailto:${contactEmail}`" class="text-accent hover:underline">
                   {{ contactEmail }}
                 </a>
                 <p class="text-gray-500 text-sm mt-2">
@@ -145,7 +113,8 @@
               <div class="contact-info-card">
                 <h3 class="font-display text-lg font-semibold mb-2">Confidentiality</h3>
                 <p class="text-gray-600">
-                  All inquiries are treated with strict confidentiality. We never share your information with third parties.
+                  All inquiries are treated with strict confidentiality. We never share your information with third
+                  parties.
                 </p>
               </div>
             </div>
@@ -155,10 +124,8 @@
     </section>
 
     <!-- Contact CTA -->
-    <HomeContactCtaSection 
-      title="Ready to discuss your needs?"
-      description="We're here to help you navigate Japan's hidden market."
-    />
+    <ContactCtaSection title="Ready to discuss your needs?"
+      description="We're here to help you navigate Japan's hidden market." />
   </div>
 </template>
 
@@ -243,10 +210,10 @@ const handleSubmit = async () => {
     // TODO: Integrar con API/backend
     // Por ahora, simular envío
     await new Promise(resolve => setTimeout(resolve, 1500))
-    
+
     // Éxito
     isSuccess.value = true
-    
+
     // Reset form
     form.name = ''
     form.email = ''
