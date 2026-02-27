@@ -1,0 +1,73 @@
+// ============================================
+// FORMS - Input, select, button styles
+// ============================================
+@use '../vars/variables' as *;
+
+.form-input {
+    transition: all $transition-base;
+
+    &:focus {
+        border-color: $color-accent;
+        box-shadow: 0 0 0 3px rgba($color-accent, 0.1);
+        outline: none;
+    }
+
+    &.error {
+        border-color: $color-error;
+        box-shadow: 0 0 0 3px rgba($color-error, 0.1);
+    }
+}
+
+// Submit Button
+.submit-btn {
+    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    transition: all $transition-base;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .loading-text {
+        &.hidden {
+            display: none;
+        }
+    }
+}
+
+// Inquiry Button (Delicatessen page)
+.inquiry-btn {
+    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    transition: opacity $transition-base;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+// Filter Buttons
+.filter-btn {
+    transition: all $transition-base;
+
+    &.active {
+        background-color: $color-primary;
+        color: white;
+    }
+}
+
+.region-filter {
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &.active {
+        background-color: $color-primary;
+        color: white;
+    }
+}
