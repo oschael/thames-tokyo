@@ -1,0 +1,96 @@
+// ============================================
+// ANIMATIONS - Scroll reveals and transitions
+// ============================================
+@use '../vars/variables' as *;
+
+// ============================================
+// SCROLL REVEAL
+// ============================================
+// Clase base para elementos que se revelan al hacer scroll
+// El estado .revealed se agrega via JavaScript (Intersection Observer o Vue)
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity $transition-slow, transform $transition-slow;
+
+    &.revealed {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// ============================================
+// STAGGER EFFECT
+// ============================================
+// Para animar múltiples elementos con delay
+
+.stagger-reveal {
+    .stagger-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $transition-slow, transform $transition-slow;
+        
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                transition-delay: #{$i * 0.1}s;
+            }
+        }
+    }
+    
+    &.revealed .stagger-item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// ============================================
+// FADE TRANSITIONS
+// ============================================
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity $transition-base;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+// ============================================
+// SLIDE TRANSITIONS
+// ============================================
+.slide-up-enter-active,
+.slide-up-leave-active {
+    transition: opacity $transition-base, transform $transition-base;
+}
+
+.slide-up-enter-from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.slide-up-leave-to {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+// ============================================
+// HOVER EFFECTS
+// ============================================
+.hover-lift {
+    transition: transform $transition-base, box-shadow $transition-base;
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-lg;
+    }
+}
+
+.hover-grow {
+    transition: transform $transition-base;
+    
+    &:hover {
+        transform: scale(1.02);
+    }
+}

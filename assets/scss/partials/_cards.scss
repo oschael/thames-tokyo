@@ -1,0 +1,133 @@
+// ============================================
+// CARDS - All card component styles
+// ============================================
+// Estilos para diferentes tipos de cards.
+// Algunos estilos pueden estar duplicados en componentes
+// con <style scoped>. Estos son estilos globales.
+
+@use '../vars/variables' as *;
+
+// ============================================
+// TRUST CHALLENGE CARDS (Index page)
+// ============================================
+.trust-card {
+    transition: all $transition-base;
+    backdrop-filter: blur(10px);
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: $shadow-lg;
+    }
+
+    &.expanded {
+        transform: scale(1.02);
+        box-shadow: $shadow-xl;
+    }
+
+    .hidden-details {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all $transition-base;
+    }
+}
+
+// ============================================
+// PRODUCT CARDS
+// ============================================
+.product-card {
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-md;
+    }
+}
+
+// ============================================
+// SERVICE CARDS
+// ============================================
+.service-card {
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: $shadow-lg;
+    }
+
+    &.expanded {
+        transform: scale(1.02);
+    }
+}
+
+.service-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-base;
+
+    &.expanded {
+        max-height: 300px;
+    }
+}
+
+// ============================================
+// SECTOR CARDS (Services page)
+// ============================================
+.sector-card {
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-md;
+    }
+}
+
+// ============================================
+// CASE STUDY CARDS (Access Stories page)
+// ============================================
+.case-study-card {
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-lg;
+    }
+
+    &.expanded {
+        transform: scale(1.02);
+    }
+}
+
+.case-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-base;
+
+    &.expanded {
+        max-height: 600px;
+    }
+}
+
+// ============================================
+// METRIC CARDS (Access Stories page)
+// ============================================
+.metric-card {
+    text-align: center;
+    padding: $spacing-xl;
+    
+    .metric-value {
+        font-family: $font-family-display;
+        font-size: 3rem;
+        font-weight: $font-weight-semibold;
+        color: $color-primary;
+    }
+    
+    .metric-label {
+        color: $gray-600;
+        margin-top: $spacing-sm;
+    }
+}

@@ -1,0 +1,56 @@
+// ============================================
+// CONTACT PAGE - Specific styles
+// ============================================
+// Estilos específicos para la página de contacto
+// que no pueden ir scoped en el componente.
+
+@use '../vars/variables' as *;
+
+// ============================================
+// CONTACT FORM CONTAINER
+// ============================================
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+// ============================================
+// CONTACT INFO CARD
+// ============================================
+.contact-info-card {
+    background-color: white;
+    padding: $spacing-xl;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-sm;
+    
+    h3 {
+        font-family: $font-family-display;
+        font-size: 1.5rem;
+        margin-bottom: $spacing-md;
+    }
+}
+
+// ============================================
+// SUCCESS MESSAGE
+// ============================================
+.contact-success {
+    text-align: center;
+    padding: $spacing-3xl;
+    
+    .success-icon {
+        width: 80px;
+        height: 80px;
+        background-color: $color-success;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto $spacing-xl;
+        
+        svg {
+            width: 40px;
+            height: 40px;
+            color: white;
+        }
+    }
+}

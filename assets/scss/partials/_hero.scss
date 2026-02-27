@@ -1,0 +1,39 @@
+// ============================================
+// HERO SECTIONS - Hero background and layouts
+// ============================================
+@use '../vars/variables' as *;
+
+// ============================================
+// HERO BACKGROUND
+// ============================================
+.hero-bg {
+    background-image: 
+        linear-gradient(rgba(44, 44, 44, 0.3), rgba(44, 44, 44, 0.3)), 
+        url('/img/hero-bridge.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    // Fallback para móviles donde fixed puede ser problemático
+    @media (max-width: $breakpoint-md) {
+        background-attachment: scroll;
+    }
+}
+
+// ============================================
+// HERO SECONDARY (For other pages)
+// ============================================
+.hero-secondary {
+    background-color: $color-primary;
+    color: white;
+    padding: $spacing-3xl 0;
+    
+    h1 {
+        font-family: $font-family-display;
+        font-size: 3rem;
+        
+        @media (max-width: $breakpoint-md) {
+            font-size: 2rem;
+        }
+    }
+}

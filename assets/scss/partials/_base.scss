@@ -1,0 +1,119 @@
+// ============================================
+// BASE STYLES - Core element styling
+// ============================================
+// Reset y estilos base para elementos HTML.
+// Estos estilos son globales y aplican a todo el sitio.
+
+@use '../vars/variables' as *;
+
+// ============================================
+// BOX SIZING RESET
+// ============================================
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// ============================================
+// HTML & BODY
+// ============================================
+html {
+    scroll-behavior: smooth;
+    // Prevenir scroll horizontal
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font-family-primary;
+    background-color: $color-secondary;
+    color: $color-text;
+    line-height: $line-height-base;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // Prevenir scroll horizontal
+    overflow-x: hidden;
+}
+
+// ============================================
+// IMAGES
+// ============================================
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; // Elimina espacio debajo de imágenes inline
+}
+
+// ============================================
+// LINKS
+// ============================================
+a {
+    text-decoration: none;
+    color: inherit;
+    
+    &:focus-visible {
+        outline: 2px solid $color-accent;
+        outline-offset: 2px;
+    }
+}
+
+// ============================================
+// BUTTONS
+// ============================================
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    
+    &:focus-visible {
+        outline: 2px solid $color-accent;
+        outline-offset: 2px;
+    }
+}
+
+// ============================================
+// FORM ELEMENTS
+// ============================================
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+// ============================================
+// SELECTION
+// ============================================
+::selection {
+    background-color: rgba($color-accent, 0.2);
+    color: $color-text;
+}
+
+// ============================================
+// FOCUS VISIBLE (Accessibility)
+// ============================================
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+}
+
+// ============================================
+// REDUCED MOTION (Accessibility)
+// ============================================
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

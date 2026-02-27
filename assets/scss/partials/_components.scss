@@ -1,0 +1,207 @@
+// ============================================
+// COMPONENTS - Reusable UI elements
+// ============================================
+@use '../vars/variables' as *;
+
+// ============================================
+// TIMELINE ITEMS (About page)
+// ============================================
+.timeline-item {
+    cursor: pointer;
+    transition: all $transition-base;
+    padding: $spacing-md;
+    border-left: 3px solid transparent;
+
+    &:hover {
+        transform: translateX(8px);
+        background-color: rgba(white, 0.5);
+    }
+
+    &.active {
+        background-color: white;
+        box-shadow: $shadow-md;
+        border-left-color: $color-accent;
+    }
+}
+
+.timeline-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-base;
+
+    &.expanded {
+        max-height: 200px;
+    }
+}
+
+// ============================================
+// ICEBERG DIAGRAM (About page)
+// ============================================
+.iceberg-diagram {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to bottom, #e5f3ff 0%, #b8e0ff 50%, #4a90e2 100%);
+    border-radius: $border-radius-xl;
+    overflow: hidden;
+    
+    @media (max-width: $breakpoint-md) {
+        height: 300px;
+    }
+}
+
+.iceberg-visible {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 80px;
+    background: white;
+    border-radius: 100px 100px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: $font-weight-semibold;
+    color: $gray-600;
+    text-align: center;
+    padding: $spacing-md;
+    
+    @media (max-width: $breakpoint-md) {
+        width: 150px;
+        height: 60px;
+        font-size: 0.875rem;
+    }
+}
+
+.iceberg-hidden {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 180px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f0f0f0 100%);
+    border-radius: 0 0 175px 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: $font-weight-semibold;
+    color: $color-accent;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: $spacing-lg;
+    
+    @media (max-width: $breakpoint-md) {
+        width: 250px;
+        height: 130px;
+        font-size: 1rem;
+    }
+}
+
+// ============================================
+// PROCESS STEPS (Services page)
+// ============================================
+.process-step {
+    position: relative;
+    text-align: center;
+    padding: $spacing-lg;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -$spacing-lg;
+        width: $spacing-xl;
+        height: 2px;
+        background-color: $color-accent;
+        transform: translateY(-50%);
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+
+    @media (max-width: $breakpoint-md) {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+// ============================================
+// LOADING SPINNER
+// ============================================
+.loading-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(white, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// ============================================
+// TOOLTIP
+// ============================================
+.tooltip {
+    position: relative;
+    
+    &::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-8px);
+        padding: $spacing-sm $spacing-md;
+        background-color: $color-primary;
+        color: white;
+        font-size: 0.875rem;
+        border-radius: $border-radius-sm;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: all $transition-fast;
+        z-index: $z-index-tooltip;
+    }
+    
+    &:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-4px);
+    }
+}
+
+// ============================================
+// BADGE
+// ============================================
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: $spacing-xs $spacing-sm;
+    font-size: 0.75rem;
+    font-weight: $font-weight-medium;
+    border-radius: $border-radius-full;
+    
+    &--primary {
+        background-color: rgba($color-primary, 0.1);
+        color: $color-primary;
+    }
+    
+    &--accent {
+        background-color: rgba($color-accent, 0.1);
+        color: $color-accent;
+    }
+    
+    &--success {
+        background-color: rgba($color-success, 0.1);
+        color: $color-success;
+    }
+}

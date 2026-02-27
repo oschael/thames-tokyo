@@ -1,0 +1,52 @@
+// ============================================
+// MAIN SCSS - Thames & Tokyo Styles
+// ============================================
+// Archivo principal que importa todos los parciales.
+// 
+// ARQUITECTURA DE ESTILOS:
+// - vars/         → Variables y configuración
+// - partials/     → Estilos reutilizables (base, typography, etc.)
+// - pages/        → Estilos específicos por página
+//
+// NOTA: En Nuxt 3, los estilos de componentes van dentro
+// de cada componente con <style scoped> cuando es posible.
+
+// ============================================
+// CONFIGURATION
+// ============================================
+@use 'vars/variables' as *;
+
+// ============================================
+// BASE STYLES
+// ============================================
+@use 'partials/base';
+
+// ============================================
+// TYPOGRAPHY
+// ============================================
+@use 'partials/typography';
+
+// ============================================
+// LAYOUT & NAVIGATION
+// ============================================
+@use 'partials/navigation';
+
+// ============================================
+// COMPONENTS
+// ============================================
+@use 'partials/cards';
+@use 'partials/forms';
+@use 'partials/hero';
+@use 'partials/components';
+
+// ============================================
+// ANIMATIONS
+// ============================================
+@use 'partials/animations';
+
+// ============================================
+// PAGE-SPECIFIC STYLES
+// ============================================
+// Solo incluir si hay estilos que no pueden
+// ir en el componente con scoped
+@use 'pages/contact';

@@ -1,0 +1,67 @@
+// ============================================
+// NAVIGATION - Header and menu styles
+// ============================================
+// Estilos para la navegación.
+// La mayoría de estilos están en el componente TheNavbar.vue
+// Estos son estilos globales adicionales.
+
+@use '../vars/variables' as *;
+
+// ============================================
+// NAVIGATION LINK
+// ============================================
+.nav-link {
+    position: relative;
+    transition: color $transition-base;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: $color-accent;
+        transition: width $transition-base;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+    
+    // Active state (handled by Vue, but CSS fallback)
+    &.router-link-active,
+    &.router-link-exact-active {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+// ============================================
+// MOBILE MENU
+// ============================================
+#mobile-menu {
+    &.hidden {
+        display: none;
+    }
+}
+
+// ============================================
+// SKIP LINK (Accessibility)
+// ============================================
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: $color-primary;
+    color: white;
+    padding: $spacing-md $spacing-lg;
+    z-index: $z-index-modal;
+    
+    &:focus {
+        top: 0;
+    }
+}
