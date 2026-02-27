@@ -2,15 +2,15 @@
   <div class="max-w-7xl mx-auto px-6 py-4">
     <div class="flex justify-between items-center">
       <div class="font-display text-2xl font-semibold text-gray-900">
-        Thames&Tokyo
+        <img src="assets/img/thames-tokyo-logo.svg" alt="Thames & Tokyo Logo" class="h-8 w-auto">
       </div>
       <div class="hidden md:flex space-x-8">
-        <a href="/index" class="nav-link text-gray-900 font-medium">Home</a>
-        <a href="/about" class="nav-link text-gray-600 hover:text-gray-900">About</a>
-        <a href="/services" class="nav-link text-gray-600 hover:text-gray-900">Services</a>
-        <a href="/access-stories" class="nav-link text-gray-600 hover:text-gray-900">Access Stories</a>
-        <a href="/delicatessen" class="nav-link text-gray-600 hover:text-gray-900">Delicatessen</a>
-        <a href="/contact" class="nav-link text-gray-600 hover:text-gray-900">Contact</a>
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/services" class="nav-link">Services</a>
+        <!-- <a href="/access-stories" class="nav-link">Access Stories</a>
+        <a href="/delicatessen" class="nav-link">Delicatessen</a> -->
+        <a href="/contact" class="nav-link">Contact</a>
       </div>
       <button class="md:hidden" id="mobile-menu-btn">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

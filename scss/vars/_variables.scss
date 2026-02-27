@@ -3,11 +3,13 @@
 // ============================================
 
 // Colors
-$color-primary: #2C2C2C;
-$color-secondary: #F8F6F2;
-$color-accent: #B85450;
-$color-supporting: #8A9B8A;
-$color-text: #1A1A1A;
+$color-primary: #1c312f;
+$color-secondary: #99d3ea;
+$color-tertiary: #fffbeb;
+
+$color-accent: $color-secondary;
+$color-supporting: $color-secondary;
+$color-text: $color-primary;
 
 // Gray Scale
 $gray-100: #f8f6f2;
@@ -25,8 +27,7 @@ $color-success: #10b981;
 $color-info: #3b82f6;
 
 // Typography
-$font-family-primary: 'Inter', sans-serif;
-$font-family-display: 'Crimson Text', serif;
+$font-family-primary: helvetica-neue-lt-pro, sans-serif;
 
 // Font Weights
 $font-weight-light: 300;

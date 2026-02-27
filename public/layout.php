@@ -23,6 +23,7 @@ if (!isset($pageScripts)) $pageScripts = "";
 
     <?php include __DIR__ . '/partials/footer.php'; ?>
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://unpkg.com/splitting@1.0.6/dist/splitting.js"></script>
