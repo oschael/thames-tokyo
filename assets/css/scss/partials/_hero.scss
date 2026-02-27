@@ -1,0 +1,11 @@
+// ============================================
+// HERO SECTIONS - Hero background and layouts
+// ============================================
+@use '../vars/variables' as *;
+
+.hero-bg {
+    background-image: linear-gradient(rgba(44, 44, 44, 0.3), rgba(44, 44, 44, 0.3)), url('../img/hero-bridge.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

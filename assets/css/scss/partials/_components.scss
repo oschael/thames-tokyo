@@ -1,0 +1,120 @@
+// ============================================
+// COMPONENTS - Reusable UI elements
+// ============================================
+@use '../vars/variables' as *;
+
+// Timeline Items (About page)
+.timeline-item {
+    cursor: pointer;
+    transition: all $transition-base;
+
+    &:hover {
+        transform: translateX(8px);
+    }
+
+    &.active {
+        background-color: white;
+        box-shadow: $shadow-md;
+    }
+}
+
+.timeline-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-base;
+
+    &.expanded {
+        max-height: 200px;
+    }
+}
+
+// Iceberg Diagram (About page)
+.iceberg-diagram {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to bottom, #e5f3ff 0%, #b8e0ff 50%, #4a90e2 100%);
+    border-radius: $border-radius-xl;
+    overflow: hidden;
+}
+
+.iceberg-visible {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 80px;
+    background: white;
+    border-radius: 100px 100px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: $font-weight-semibold;
+    color: $gray-600;
+}
+
+.iceberg-hidden {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f0f0f0 100%);
+    border-radius: 0 0 200px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: $font-weight-semibold;
+    color: $color-accent;
+    font-size: 1.2rem;
+}
+
+// Process Steps (Services page)
+.process-step {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -2rem;
+        width: 2rem;
+        height: 2px;
+        background-color: $color-accent;
+        transform: translateY(-50%);
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+
+    @media (max-width: $breakpoint-md) {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+// Japan Map (Delicatessen page)
+.japan-map {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.map-region {
+    cursor: pointer;
+    transition: all $transition-base;
+
+    &:hover {
+        fill: $color-accent;
+        opacity: 0.8;
+    }
+
+    &.active {
+        fill: $color-primary;
+    }
+}
