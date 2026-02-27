@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initCarousel();
     initMobileMenu();
     initSmoothScroll();
+    initFormValidation();
 });
 
 // Typewriter effect for hero tagline
@@ -296,3 +297,84 @@ window.ThamesTokyo = {
     showErrorMessage,
     staggerAnimation
 };
+
+// ============================================
+// Form Validation & Submission
+// ============================================
+
+const contactForm = document.getElementById('contact-form');
+const formFeedback = document.getElementById('form-feedback');
+
+function initFormValidation() {
+    if (!contactForm) return;
+    
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (!contactForm.checkValidity()) {
+            contactForm.classList.add('was-validated');
+            return;
+        }
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
+        
+        try {
+            // Show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+            
+            // Using Formspree (recommended)
+            // 1. Sign up at https://formspree.io/
+            // 2. Create a new form
+            // 3. Replace 'YOUR_FORM_ID' below with your actual Formspree form ID
+            
+            const response = await fetch('https://formspree.io/f/mbddlgrg', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            
+            const success = response.ok;
+            
+            if (success) {
+                showFormFeedback('success', '¡Mensaje enviado con éxito! Te contactaremos pronto.');
+                contactForm.reset();
+                contactForm.classList.remove('was-validated');
+            } else {
+                throw new Error('Error en el envío');
+            }
+            
+            // Restore button
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+            
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            showFormFeedback('danger', 'Hubo un error al enviar el mensaje. Por favor intenta nuevamente.');
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Enviar mensaje';
+        }
+    });
+}
+
+function showFormFeedback(type, message) {
+    if (!formFeedback) return;
+    
+    formFeedback.className = `alert alert-${type} show`;
+    formFeedback.textContent = message;
+    formFeedback.setAttribute('role', 'alert');
+    
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+        formFeedback.classList.remove('show');
+    }, 5000);
+}

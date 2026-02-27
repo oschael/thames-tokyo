@@ -1,0 +1,511 @@
+<?php
+$section = "Services";
+
+/* ========= CONTENIDO ========= */
+ob_start();
+?>
+
+<!-- Hero Section -->
+<section class="pt-32 pb-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+        <div class="scroll-reveal">
+            <h1 class="font-display text-5xl md:text-6xl font-semibold text-gray-900 mb-8">
+                Services
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                We act as a cultural interface for your business, absorbing the friction and transforming complexity into opportunity. Every service is designed to bridge the gap between Western expectations and Japan's hidden market.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Problem Context Section -->
+<section class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-display text-4xl font-semibold text-gray-900 mb-6">
+                The Challenge We Solve
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                True quality in Japan is rarely loud. The best suppliers do not compete for attention; they wait for the right introduction.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center scroll-reveal">
+                <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Language & Protocol Barriers</h3>
+                <p class="text-gray-600">
+                    The most exclusive suppliers operate in Japanese only, with business protocols that require cultural fluency to navigate successfully.
+                </p>
+            </div>
+
+            <div class="text-center scroll-reveal">
+                <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">The Invisible Quality Layer</h3>
+                <p class="text-gray-600">
+                    What appears premium to Western eyes often represents the accessible surface level, not the true artisanal quality reserved for insiders.
+                </p>
+            </div>
+
+            <div class="text-center scroll-reveal">
+                <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">The Cost of Cultural Misreading</h3>
+                <p class="text-gray-600">
+                    A single cultural misstep can permanently close doors to the very suppliers you need most.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Pillars Section -->
+<section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-display text-4xl font-semibold text-gray-900 mb-6">
+                How We Turn Risk Into Partnership
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Three core services that work together to unlock Japan's hidden market for your business.
+            </p>
+        </div>
+
+        <div class="space-y-8">
+            <!-- Service 1: Curation & Vetting -->
+            <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden" data-service="1">
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-display text-3xl font-semibold">Curation & Vetting</h3>
+                        </div>
+                        <svg class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 text-lg mb-4">
+                        Every supplier in our network undergoes rigorous evaluation for quality, reliability, and cultural alignment with your business values.
+                    </p>
+                    <div class="service-details">
+                        <div class="border-t pt-6">
+                            <h4 class="font-semibold text-lg mb-4">What This Includes:</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Comprehensive supplier background checks</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Quality assessment and certification review</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Production capacity and scalability analysis</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Cultural fit assessment for partnership longevity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: Cultural Interface -->
+            <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden" data-service="2">
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-display text-3xl font-semibold">Cultural Interface</h3>
+                        </div>
+                        <svg class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 text-lg mb-4">
+                        We translate not just language, but business culture, expectations, and unspoken protocols that make or break partnerships.
+                    </p>
+                    <div class="service-details">
+                        <div class="border-t pt-6">
+                            <h4 class="font-semibold text-lg mb-4">What This Includes:</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Initial introduction and relationship building</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Negotiation support with cultural context</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Communication protocol establishment</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Ongoing relationship management support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: End-to-End Execution -->
+            <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden" data-service="3">
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-display text-3xl font-semibold">End-to-End Execution</h3>
+                        </div>
+                        <svg class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 text-lg mb-4">
+                        From first handshake to final export, we remain involved to ensure every detail meets both cultural and commercial expectations.
+                    </p>
+                    <div class="service-details">
+                        <div class="border-t pt-6">
+                            <h4 class="font-semibold text-lg mb-4">What This Includes:</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Sample coordination and quality validation</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Contract negotiation and documentation</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Production oversight and timeline management</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-gray-900 rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-700">Export logistics and compliance support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Visualization Section -->
+<section class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-display text-4xl font-semibold text-gray-900 mb-6">
+                Our Process
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                A proven methodology that transforms cultural complexity into competitive advantage.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="process-step text-center scroll-reveal">
+                <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-white font-bold text-xl">1</span>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Discovery</h3>
+                <p class="text-gray-600">
+                    Understanding your specific needs, quality standards, and business culture to identify the right suppliers.
+                </p>
+            </div>
+
+            <div class="process-step text-center scroll-reveal">
+                <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-white font-bold text-xl">2</span>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Curation</h3>
+                <p class="text-gray-600">
+                    Identifying and vetting suppliers from our exclusive network that match your requirements and values.
+                </p>
+            </div>
+
+            <div class="process-step text-center scroll-reveal">
+                <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-white font-bold text-xl">3</span>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Connection</h3>
+                <p class="text-gray-600">
+                    Facilitating introductions and managing the cultural interface to establish trust and mutual understanding.
+                </p>
+            </div>
+
+            <div class="process-step text-center scroll-reveal">
+                <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-white font-bold text-xl">4</span>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Execution</h3>
+                <p class="text-gray-600">
+                    Managing every step from sampling to delivery, ensuring quality and cultural expectations are met.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sector Expertise Section -->
+<section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-display text-4xl font-semibold text-gray-900 mb-6">
+                Sector Expertise
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Deep experience across industries that demand precision, quality, and cultural understanding.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="sector-card bg-white p-8 rounded-lg shadow-lg text-center scroll-reveal">
+                <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Pharmaceutical</h3>
+                <p class="text-gray-600">
+                    Precision equipment, active ingredients, and packaging solutions that meet the strictest regulatory standards.
+                </p>
+            </div>
+
+            <div class="sector-card bg-white p-8 rounded-lg shadow-lg text-center scroll-reveal">
+                <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Technology</h3>
+                <p class="text-gray-600">
+                    Specialized components, manufacturing equipment, and precision instruments from Japan's leading tech suppliers.
+                </p>
+            </div>
+
+            <div class="sector-card bg-white p-8 rounded-lg shadow-lg text-center scroll-reveal">
+                <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Finance</h3>
+                <p class="text-gray-600">
+                    Premium financial services, investment opportunities, and institutional partnerships in the Japanese market.
+                </p>
+            </div>
+
+            <div class="sector-card bg-white p-8 rounded-lg shadow-lg text-center scroll-reveal">
+                <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Marketing</h3>
+                <p class="text-gray-600">
+                    Premium promotional products, corporate gifts, and brand partnerships that reflect Japanese quality standards.
+                </p>
+            </div>
+
+            <div class="sector-card bg-white p-8 rounded-lg shadow-lg text-center scroll-reveal">
+                <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Consumer Products</h3>
+                <p class="text-gray-600">
+                    Premium food products, artisanal goods, and luxury items that represent the finest of Japanese craftsmanship.
+                </p>
+            </div>
+
+            <div class="sector-card bg-white p-8 rounded-lg shadow-lg text-center scroll-reveal">
+                <div class="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Manufacturing</h3>
+                <p class="text-gray-600">
+                    Specialized machinery, precision tools, and manufacturing partnerships that leverage Japan's industrial excellence.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Peace of Mind Section -->
+<section class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-display text-4xl font-semibold text-gray-900 mb-6">
+                Peace of Mind
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                We remain involved from the first handshake to the final export, ensuring every detail meets both cultural and commercial expectations.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center scroll-reveal">
+                <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Timeline Clarity</h3>
+                <p class="text-gray-600">
+                    Clear timelines with realistic expectations based on cultural business rhythms, not Western urgency.
+                </p>
+            </div>
+
+            <div class="text-center scroll-reveal">
+                <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Quality Assurance</h3>
+                <p class="text-gray-600">
+                    Personal oversight of every step, from initial sampling to final quality control and export documentation.
+                </p>
+            </div>
+
+            <div class="text-center scroll-reveal">
+                <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-semibold mb-4">Relationship Continuity</h3>
+                <p class="text-gray-600">
+                    We don't just make introductions—we facilitate ongoing relationships that grow stronger over time.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 px-6 bg-gray-900 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="font-display text-4xl md:text-5xl font-semibold mb-6">
+            Ready to Unlock Japan's Hidden Market?
+        </h2>
+        <p class="text-xl mb-8 opacity-90">
+            Let's discuss your specific access challenge and how our cultural interface approach can transform it into competitive advantage.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="bg-white text-gray-900 px-8 py-4 rounded-sm font-semibold hover:bg-gray-100 transition-colors">
+                Discuss your access challenge
+            </a>
+            <a href="delicatessen.html" class="border-2 border-white text-white px-8 py-4 rounded-sm font-semibold hover:bg-white hover:text-gray-900 transition-colors">
+                Taste the quality
+            </a>
+        </div>
+    </div>
+</section>
+
+<?php
+$content = ob_get_clean();
+
+
+/* ========= SCRIPTS DE LA VISTA ========= */
+ob_start();
+?>
+
+<script>
+    // Initialize service card interactions
+    document.addEventListener('DOMContentLoaded', function() {
+        const serviceCards = document.querySelectorAll('.service-card');
+        
+        serviceCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const details = this.querySelector('.service-details');
+                const arrow = this.querySelector('svg');
+                const isExpanded = details.classList.contains('expanded');
+                
+                // Close all other cards
+                serviceCards.forEach(otherCard => {
+                    if (otherCard !== this) {
+                        otherCard.classList.remove('expanded');
+                        otherCard.querySelector('.service-details').classList.remove('expanded');
+                        otherCard.querySelector('svg').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current card
+                if (isExpanded) {
+                    this.classList.remove('expanded');
+                    details.classList.remove('expanded');
+                    arrow.style.transform = 'rotate(0deg)';
+                } else {
+                    this.classList.add('expanded');
+                    details.classList.add('expanded');
+                    arrow.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+        
+        // Initialize scroll reveal
+        initScrollReveal();
+    });
+    
+    function initScrollReveal() {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+    }
+</script>
+    
+<?php
+$pageScripts = ob_get_clean();
+
+include __DIR__ . '/../layout.php';
