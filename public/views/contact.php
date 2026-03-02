@@ -154,7 +154,7 @@ ob_start();
             <div class="col-lg-4">
                 <div class="d-flex flex-column gap-4">
                     <!-- Founder Trust Block -->
-                    <div class="trust-card trust-card--gradient p-4 rounded-3 shadow scroll-reveal">
+                    <div class="trust-card bg-blue-100 p-4 rounded-3 shadow scroll-reveal">
                         <h3 class="font-display fs-5 fw-semibold text-dark mb-3">
                             On The Founder
                         </h3>
@@ -181,7 +181,7 @@ ob_start();
                     </div>
 
                     <!-- Execution Trust Block -->
-                    <div class="trust-card trust-card--gradient p-4 rounded-3 shadow scroll-reveal">
+                    <div class="trust-card bg-blue-100 p-4 rounded-3 shadow scroll-reveal">
                         <h3 class="font-display fs-5 fw-semibold text-dark mb-3">
                             Peace of Mind
                         </h3>
@@ -233,7 +233,7 @@ ob_start();
 
                     <!-- Success Metrics -->
                     <div class="bg-dark text-white p-4 rounded-3 shadow scroll-reveal">
-                        <h3 class="font-display fs-5 fw-semibold mb-3">
+                        <h3 class="font-display fs-5 fw-semibold mb-3 text-blue">
                             Proven Results
                         </h3>
                         <div class="d-flex flex-column gap-3">

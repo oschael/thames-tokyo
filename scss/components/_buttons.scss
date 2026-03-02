@@ -50,7 +50,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    background: linear-gradient(135deg, $primary-color 0%, $color-accent 100%);
     color: white;
     padding: $spacing-md $spacing-xl;
     border-radius: $border-radius-sm;
@@ -65,7 +65,7 @@
 
 // Submit Button
 .submit-btn {
-    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    background: linear-gradient(135deg, $primary-color 0%, $color-accent 100%);
     transition: all $transition-base;
     width: 100%;
     color: white;
@@ -95,7 +95,7 @@
 
 // Inquiry Button (Delicatessen page)
 .inquiry-btn {
-    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    background: linear-gradient(135deg, $primary-color 0%, $color-accent 100%);
     transition: opacity $transition-base;
     color: white;
     padding: $spacing-sm $spacing-md;
@@ -119,13 +119,13 @@
     background-color: transparent;
 
     &.active {
-        background-color: $color-primary;
+        background-color: $primary-color;
         color: white;
-        border-color: $color-primary;
+        border-color: $primary-color;
     }
     
     &:hover:not(.active) {
-        border-color: $color-primary;
+        border-color: $primary-color;
     }
 }
 
@@ -140,13 +140,13 @@
     background-color: transparent;
 
     &.active {
-        background-color: $color-primary;
+        background-color: $primary-color;
         color: white;
-        border-color: $color-primary;
+        border-color: $primary-color;
     }
     
     &:hover:not(.active) {
-        border-color: $color-primary;
+        border-color: $primary-color;
     }
 }
 

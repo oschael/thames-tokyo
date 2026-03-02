@@ -21,7 +21,7 @@
     }
 
     &.active {
-        fill: $color-primary;
+        fill: $primary-color;
     }
 }
 
@@ -37,6 +37,6 @@
 
 // Access story block
 .access-story {
-    background: linear-gradient(135deg, $color-secondary 0%, #ffffff 100%);
+    background: linear-gradient(135deg, $secondary-color 0%, #ffffff 100%);
     border-left: 4px solid $color-accent;
 }

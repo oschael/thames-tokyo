@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
+    initLayoutVariables();
     initTypewriter();
     initScrollReveal();
     initTrustCards();
@@ -10,6 +11,28 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScroll();
     initFormValidation();
 });
+
+// Set CSS custom properties for nav and footer heights
+function initLayoutVariables() {
+    const nav = document.querySelector('.navbar-tt');
+    const footer = document.querySelector('.footer-tt');
+    const root = document.documentElement;
+
+    function updateLayoutVariables() {
+        if (nav) {
+            root.style.setProperty('--nav-height', `${nav.offsetHeight}px`);
+        }
+        if (footer) {
+            root.style.setProperty('--footer-height', `${footer.offsetHeight}px`);
+        }
+    }
+
+    // Set initial values
+    updateLayoutVariables();
+
+    // Update on resize
+    window.addEventListener('resize', updateLayoutVariables);
+}
 
 // Typewriter effect for hero tagline
 function initTypewriter() {

@@ -7,8 +7,8 @@
 .nav-link {
     position: relative;
     transition: color $transition-base;
-    font-weight: $font-weight-bold;
-    color: $color-primary;
+    font-weight: $font-weight-normal;
+    color: $primary-color;
 
     &::after {
         content: '';

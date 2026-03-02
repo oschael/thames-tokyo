@@ -7,9 +7,9 @@
 // CSS Custom Properties for runtime manipulation
 :root {
     // Brand Colors
-    --color-primary: #{$color-primary};
-    --color-secondary: #{$color-secondary};
-    --color-tertiary: #{$color-tertiary};
+    --color-primary: #{$primary-color};
+    --color-secondary: #{$secondary-color};
+    --color-tertiary: #{$tertiary-color};
     --color-accent: #{$color-accent};
     --color-supporting: #{$color-supporting};
     --color-text: #{$color-text};
@@ -62,20 +62,24 @@
 // Body base styles
 body {
     font-family: $font-family-primary;
-    background-color: lighten($color-tertiary, 1%);
+    background-color: $gray-100;
     color: $color-text;
     line-height: $line-height-base;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 // Main content wrapper
 main {
-    min-height: calc(100vh - 200px);
+    flex: 1 0 auto;
+    padding: var(--nav-height) 0 0;
 }
 
 // Selection style
 ::selection {
-    background-color: rgba($color-secondary, 0.3);
-    color: $color-primary;
+    background-color: rgba($secondary-color, 0.3);
+    color: $primary-color;
 }

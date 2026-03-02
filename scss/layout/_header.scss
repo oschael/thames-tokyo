@@ -32,8 +32,8 @@
 .nav-link {
     position: relative;
     transition: color $transition-base;
-    font-weight: $font-weight-bold;
-    color: $color-primary;
+    font-weight: $font-weight-regular;
+    color: $primary-color;
     padding: $spacing-sm 0;
 
     &::after {
@@ -48,7 +48,7 @@
     }
 
     &:hover {
-        color: $color-primary;
+        color: $primary-color;
         
         &::after {
             width: 100%;

@@ -2,7 +2,7 @@
   <div class="navbar-container d-flex justify-content-between align-items-center">
     <div class="font-display fs-4 fw-semibold text-gray-900">
       <a href="/">
-        <img src="assets/img/thames-tokyo-logo.svg" alt="Thames & Tokyo Logo" class="navbar-logo">
+        <img src="assets/img/thames-tokyo-logo-hor.svg" alt="Thames & Tokyo Logo" class="navbar-logo">
       </a>
     </div>
     <div class="desktop-nav">

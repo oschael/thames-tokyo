@@ -3,25 +3,37 @@
 // ============================================
 
 // Brand Colors
-$color-primary: #1c312f;
-$color-secondary: #99d3ea;
-$color-tertiary: #fffbeb;
+$primary-color: #1c312f;
+$secondary-color: #99d3ea;
+$tertiary-color: #fffbeb;
 
 // Semantic Colors
-$color-accent: $color-secondary;
-$color-supporting: $color-secondary;
-$color-text: $color-primary;
+$color-accent: $secondary-color;
+$color-supporting: $secondary-color;
+$color-text: $primary-color;
 
 // Gray Scale (aligned with Bootstrap's gray scale)
-$gray-100: #f8f6f2;
-$gray-200: #e5e7eb;
-$gray-300: #d1d5db;
-$gray-400: #9ca3af;
-$gray-500: #6b7280;
-$gray-600: #4b5563;
-$gray-700: #374151;
-$gray-800: #1f2937;
-$gray-900: #111827;
+$white:    #fff;
+$gray-100: #e8eaea;
+$gray-200: #d2d6d5;
+$gray-300: #bbc1c1;
+$gray-400: #a4adac;
+$gray-500: #8e9897;
+$gray-600: #778382;
+$gray-700: #606f6d;
+$gray-800: #495a59;
+$gray-900: #334644;
+$black:    #000;
+
+$blue-100: #f5fbfd;
+$blue-200: #ebf6fb;
+$blue-300: #e0f2f9;
+$blue-400: #d6edf7;
+$blue-500: #cce9f5;
+$blue-600: #c2e5f2;
+$blue-700: #b8e0f0;
+$blue-800: #addcee;
+$blue-900: #a3d7ec;
 
 // Status Colors
 $color-error: #ef4444;
@@ -35,10 +47,10 @@ $color-overlay-medium: rgba(0, 0, 0, 0.4);
 $color-overlay-dark: rgba(0, 0, 0, 0.5);
 
 // Bootstrap color overrides
-$red-500: #ef4444;
-$blue-500: #3b82f6;
-$green-500: #10b981;
-$purple-500: #8b5cf6;
-$orange-500: #f97316;
-$teal-500: #14b8a6;
-$yellow-500: #eab308;
+$red: #ef4444;
+$blue: #3b82f6;
+$green: #10b981;
+$purple: #8b5cf6;
+$orange: #f97316;
+$teal: #14b8a6;
+$yellow: #eab308;

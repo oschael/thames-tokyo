@@ -206,7 +206,7 @@ ob_start();
             <div class="col-lg-6 scroll-reveal">
                 <div class="d-flex flex-column gap-4">
                     <div class="d-flex align-items-start gap-3">
-                        <div class="bullet-dot bg-danger mt-2 flex-shrink-0"></div>
+                        <div class="bullet-dot bg-blue mt-2 flex-shrink-0"></div>
                         <div>
                             <h3 class="fw-semibold fs-5 mb-2">Language & Protocol Barriers</h3>
                             <p class="text-muted mb-0">
@@ -215,7 +215,7 @@ ob_start();
                         </div>
                     </div>
                     <div class="d-flex align-items-start gap-3">
-                        <div class="bullet-dot bg-danger mt-2 flex-shrink-0"></div>
+                        <div class="bullet-dot bg-blue mt-2 flex-shrink-0"></div>
                         <div>
                             <h3 class="fw-semibold fs-5 mb-2">The Invisible Quality Layer</h3>
                             <p class="text-muted mb-0">
@@ -224,7 +224,7 @@ ob_start();
                         </div>
                     </div>
                     <div class="d-flex align-items-start gap-3">
-                        <div class="bullet-dot bg-danger mt-2 flex-shrink-0"></div>
+                        <div class="bullet-dot bg-blue mt-2 flex-shrink-0"></div>
                         <div>
                             <h3 class="fw-semibold fs-5 mb-2">The Cost of Cultural Misreading</h3>
                             <p class="text-muted mb-0">
@@ -252,7 +252,7 @@ ob_start();
 
         <div class="row g-4">
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                <div class="size-icon-lg bg-blue rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
                     <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
@@ -264,7 +264,7 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                <div class="size-icon-lg bg-blue rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
                     <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
                     </svg>
@@ -276,7 +276,7 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                <div class="size-icon-lg bg-blue rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
                     <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
@@ -304,8 +304,8 @@ ob_start();
 
         <div class="row g-4">
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-success text-white d-flex align-items-center justify-content-center mx-auto mb-4">
-                    <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="size-icon-lg bg-success rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <svg class="text-white" width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
@@ -316,8 +316,8 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4">
-                    <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="size-icon-lg bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <svg class="text-white" width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                     </svg>
                 </div>
@@ -328,8 +328,8 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-purple text-white d-flex align-items-center justify-content-center mx-auto mb-4">
-                    <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="size-icon-lg bg-purple rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <svg class="text-white" width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                     </svg>
                 </div>

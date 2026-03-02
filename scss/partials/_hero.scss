@@ -1,11 +1,17 @@
 // ============================================
 // HERO SECTIONS - Hero background and layouts
 // ============================================
+@use '../abstracts/colors' as *;
 @use '../vars/variables' as *;
 
 .hero-bg {
-    background-image: linear-gradient(rgba(44, 44, 44, 0.3), rgba(44, 44, 44, 0.3)), url('../img/hero-bridge.jpg');
+    background-image: linear-gradient(rgba($primary-color, 0.25), rgba($primary-color, 0.8)), url('../img/hero-bridge.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: calc(100svh - var(--nav-height));
 }

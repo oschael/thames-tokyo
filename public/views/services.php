@@ -33,7 +33,7 @@ ob_start();
 
         <div class="row g-4">
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-danger text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                <div class="size-icon-lg bg-blue rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
                     <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                     </svg>
@@ -45,7 +45,7 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-danger text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                <div class="size-icon-lg bg-blue rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
                     <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
@@ -58,7 +58,7 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-danger text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                <div class="size-icon-lg bg-blue rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
                     <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
                     </svg>
@@ -90,7 +90,7 @@ ob_start();
                 <div class="p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <div class="d-flex align-items-center gap-3">
-                            <div class="icon-circle-sm bg-dark text-white d-flex align-items-center justify-content-center">
+                            <div class="size-icon-md bg-blue rounded-circle d-flex align-items-center justify-content-center">
                                 <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
@@ -143,7 +143,7 @@ ob_start();
                 <div class="p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <div class="d-flex align-items-center gap-3">
-                            <div class="icon-circle-sm bg-dark text-white d-flex align-items-center justify-content-center">
+                            <div class="size-icon-md bg-blue rounded-circle d-flex align-items-center justify-content-center">
                                 <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
                                 </svg>
@@ -196,7 +196,7 @@ ob_start();
                 <div class="p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <div class="d-flex align-items-center gap-3">
-                            <div class="icon-circle-sm bg-dark text-white d-flex align-items-center justify-content-center">
+                            <div class="size-icon-md bg-blue rounded-circle d-flex align-items-center justify-content-center">
                                 <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                                 </svg>
@@ -262,7 +262,7 @@ ob_start();
         <div class="row g-4">
             <div class="col-md-3 text-center scroll-reveal">
                 <div class="process-step">
-                    <div class="icon-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <span class="fw-bold fs-5">1</span>
                     </div>
                     <h3 class="font-display fs-5 fw-semibold mb-3">Discovery</h3>
@@ -274,7 +274,7 @@ ob_start();
 
             <div class="col-md-3 text-center scroll-reveal">
                 <div class="process-step">
-                    <div class="icon-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <span class="fw-bold fs-5">2</span>
                     </div>
                     <h3 class="font-display fs-5 fw-semibold mb-3">Curation</h3>
@@ -286,7 +286,7 @@ ob_start();
 
             <div class="col-md-3 text-center scroll-reveal">
                 <div class="process-step">
-                    <div class="icon-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <span class="fw-bold fs-5">3</span>
                     </div>
                     <h3 class="font-display fs-5 fw-semibold mb-3">Connection</h3>
@@ -298,7 +298,7 @@ ob_start();
 
             <div class="col-md-3 text-center scroll-reveal">
                 <div class="process-step">
-                    <div class="icon-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <span class="fw-bold fs-5">4</span>
                     </div>
                     <h3 class="font-display fs-5 fw-semibold mb-3">Execution</h3>
@@ -326,7 +326,7 @@ ob_start();
         <div class="row g-4">
             <div class="col-md-6 col-lg-4 scroll-reveal">
                 <div class="sector-card bg-white p-4 rounded-3 shadow text-center h-100">
-                    <div class="icon-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
                         </svg>
@@ -340,7 +340,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4 scroll-reveal">
                 <div class="sector-card bg-white p-4 rounded-3 shadow text-center h-100">
-                    <div class="icon-circle bg-success text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-success text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
@@ -354,7 +354,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4 scroll-reveal">
                 <div class="sector-card bg-white p-4 rounded-3 shadow text-center h-100">
-                    <div class="icon-circle bg-purple text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-purple text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
                         </svg>
@@ -368,7 +368,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4 scroll-reveal">
                 <div class="sector-card bg-white p-4 rounded-3 shadow text-center h-100">
-                    <div class="icon-circle bg-warning text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-warning text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path>
                         </svg>
@@ -382,7 +382,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4 scroll-reveal">
                 <div class="sector-card bg-white p-4 rounded-3 shadow text-center h-100">
-                    <div class="icon-circle bg-danger text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-danger text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
                         </svg>
@@ -396,7 +396,7 @@ ob_start();
 
             <div class="col-md-6 col-lg-4 scroll-reveal">
                 <div class="sector-card bg-white p-4 rounded-3 shadow text-center h-100">
-                    <div class="icon-circle bg-info text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <div class="size-icon-lg rounded-circle bg-info text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                         <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -426,7 +426,7 @@ ob_start();
 
         <div class="row g-4">
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-success text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                <div class="size-icon-lg rounded-circle bg-success text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                     <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
@@ -438,7 +438,7 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                <div class="size-icon-lg rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                     <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                     </svg>
@@ -450,7 +450,7 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="icon-circle bg-purple text-white d-flex align-items-center justify-content-center mx-auto mb-4">
+                <div class="size-icon-lg rounded-circle bg-purple text-white d-flex align-items-center justify-content-center mx-auto mb-4">
                     <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                     </svg>
@@ -465,9 +465,9 @@ ob_start();
 </section>
 
 <!-- CTA Section -->
-<section class="section-py section-px bg-dark text-white">
+<section class="section-py section-px bg-gray text-white">
     <div class="container-sm text-center">
-        <h2 class="font-display fs-1 fw-semibold mb-3">
+        <h2 class="font-display display-4 text-blue fw-semibold mb-3">
             Ready to Unlock Japan's Hidden Market?
         </h2>
         <p class="fs-5 mb-4 opacity-75">

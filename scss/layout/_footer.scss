@@ -4,11 +4,12 @@
 @use '../abstracts/colors' as *;
 @use '../vars/variables' as *;
 
-// Main footer
+// Main footer - sticky to bottom
 .footer-tt {
     padding: $spacing-xl $spacing-lg;
     background-color: white;
     border-top: 1px solid $gray-200;
+    margin-top: auto; // Push to bottom in flex container
 }
 
 // Footer container

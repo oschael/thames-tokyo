@@ -6,13 +6,13 @@ ob_start();
 ?>
 
 <!-- Hero Section -->
-<section class="hero-bg min-vh-100 d-flex align-items-center justify-content-center position-relative">
+<section class="hero-bg">
     <div class="position-absolute inset-0 gradient-overlay-dark"></div>
     <div class="position-relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <h1 class="font-display display-4 fw-semibold mb-4 leading-tight">
+        <h1 class="font-display display-3 fw-semibold mb-4 leading-tight text-white">
             <span id="typed-text"></span>
         </h1>
-        <p class="fs-5 mb-5 opacity-90 max-w-3xl mx-auto leading-relaxed">
+        <p class="mb-5 opacity-90 max-w-3xl mx-auto leading-relaxed px-3 px-lg-5 h5 lh-1 text-white fw-normal">
             The most exceptional Japanese suppliers do not advertise in English. We are your key to the locked layer of the market.
         </p>
         <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
@@ -42,7 +42,7 @@ ob_start();
             <div class="col-md-4">
                 <div class="trust-card bg-white-60 p-4 rounded-3 cursor-pointer h-100" data-card="1">
                     <div class="mb-4">
-                        <div class="size-icon-md bg-gray-900 rounded-circle d-flex align-items-center justify-content-center mb-3">
+                        <div class="size-icon-md bg-blue rounded-circle d-flex align-items-center justify-content-center mb-3">
                             <svg class="size-icon-sm text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                             </svg>
@@ -64,7 +64,7 @@ ob_start();
             <div class="col-md-4">
                 <div class="trust-card bg-white-60 p-4 rounded-3 cursor-pointer h-100" data-card="2">
                     <div class="mb-4">
-                        <div class="size-icon-md bg-gray-900 rounded-circle d-flex align-items-center justify-content-center mb-3">
+                        <div class="size-icon-md bg-blue rounded-circle d-flex align-items-center justify-content-center mb-3">
                             <svg class="size-icon-sm text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
@@ -87,7 +87,7 @@ ob_start();
             <div class="col-md-4">
                 <div class="trust-card bg-white-60 p-4 rounded-3 cursor-pointer h-100" data-card="3">
                     <div class="mb-4">
-                        <div class="size-icon-md bg-gray-900 rounded-circle d-flex align-items-center justify-content-center mb-3">
+                        <div class="size-icon-md bg-blue rounded-circle d-flex align-items-center justify-content-center mb-3">
                             <svg class="size-icon-sm text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
                             </svg>
@@ -113,8 +113,8 @@ ob_start();
 <section class="section-py section-px bg-white">
     <div class="container-tt">
         <div class="row g-5 align-items-center">
-            <div class="col-lg-6 scroll-reveal">
-                <img src="assets/img/founder-rie.jpg" alt="Rie Toda Flores" class="w-100 h-96 object-cover rounded-3 shadow-lg">
+            <div class="col-lg-6 scroll-reveal h-100">
+                <img src="assets/img/founder-rie.jpg" alt="Rie Toda Flores" class="w-100 h-100 object-cover rounded-3 shadow-lg">
             </div>
             <div class="col-lg-6 scroll-reveal">
                 <h2 class="font-display display-5 fw-semibold text-gray-900 mb-4">
@@ -122,19 +122,19 @@ ob_start();
                 </h2>
                 <div class="d-flex flex-column gap-3">
                     <div class="d-flex align-items-start gap-3">
-                        <div class="bullet-dot bg-gray-900 rounded-circle mt-2 flex-shrink-0"></div>
+                        <div class="bullet-dot bg-gray rounded-circle mt-2 flex-shrink-0"></div>
                         <p class="fs-5 text-gray-700">
                             <strong>Rie Toda Flores</strong> has spent years consulting for global firms in the most rigorous and highly regulated sectors, building relationships with Japan's most exclusive suppliers.
                         </p>
                     </div>
                     <div class="d-flex align-items-start gap-3">
-                        <div class="bullet-dot bg-gray-900 rounded-circle mt-2 flex-shrink-0"></div>
+                        <div class="bullet-dot bg-gray rounded-circle mt-2 flex-shrink-0"></div>
                         <p class="fs-5 text-gray-700">
                             Fluent in both Japanese business culture and Western expectations, she serves as the cultural interface that transforms risk into partnership.
                         </p>
                     </div>
                     <div class="d-flex align-items-start gap-3">
-                        <div class="bullet-dot bg-gray-900 rounded-circle mt-2 flex-shrink-0"></div>
+                        <div class="bullet-dot bg-gray rounded-circle mt-2 flex-shrink-0"></div>
                         <p class="fs-5 text-gray-700">
                             Her network spans from 200-year-old confectionery houses in Kyoto to cutting-edge manufacturers in Tokyo, each relationship built on trust and mutual respect.
                         </p>
@@ -167,8 +167,8 @@ ob_start();
 
         <div class="row g-4 mb-5">
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="size-icon-lg bg-gray-900 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
-                    <svg class="size-icon-md text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="size-icon-lg bg-blue rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <svg class="size-icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
@@ -179,8 +179,8 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="size-icon-lg bg-gray-900 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
-                    <svg class="size-icon-md text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="size-icon-lg bg-blue rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <svg class="size-icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
                     </svg>
                 </div>
@@ -191,8 +191,8 @@ ob_start();
             </div>
 
             <div class="col-md-4 text-center scroll-reveal">
-                <div class="size-icon-lg bg-gray-900 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
-                    <svg class="size-icon-md text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="size-icon-lg bg-blue rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
+                    <svg class="size-icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
                 </div>
@@ -215,7 +215,7 @@ ob_start();
 </section>
 
 <!-- Delicatessen Teaser Section -->
-<section class="section-py section-px bg-white">
+<!-- <section class="section-py section-px bg-white">
     <div class="container-tt">
         <div class="text-center mb-5 scroll-reveal">
             <h2 class="font-display display-5 fw-semibold text-gray-900 mb-4">
@@ -281,20 +281,18 @@ ob_start();
             </a>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Access Stories Preview Section -->
-<section class="section-py section-px">
+<section class="section-py section-px bg-white">
     <div class="container-tt">
         <div class="row g-5 align-items-center">
-            <div class="col-lg-6 scroll-reveal">
-                <h2 class="font-display display-5 fw-semibold text-gray-900 mb-5">
+            <div class="col-lg-6 scroll-reveal text-center">
+                <h2 class="font-display h3 fw-semibold text-gray-900 mb-5">
                     Stories from the Invisible Market
                 </h2>
-                <div class="text-center">
-                    <div class="display-5 font-display fw-semibold text-gray-900 mb-2">15+</div>
-                    <p class="text-gray-600 mb-4">Years of relationship building</p>
-                </div>
+                <div class="display-5 font-display fw-semibold text-gray-900 mb-2">15+</div>
+                <p class="text-gray-600 mb-4">Years of relationship building</p>
             </div>
             <div class="col-lg-6 scroll-reveal">
                 <div class="d-flex flex-column gap-3 mb-5">
@@ -321,9 +319,9 @@ ob_start();
 </section>
 
 <!-- Contact CTA Section -->
-<section class="section-py section-px bg-gray-900 text-white">
+<section class="section-py section-px bg-gray text-white">
     <div class="max-w-4xl mx-auto text-center">
-        <h2 class="font-display display-5 fw-semibold mb-4">
+        <h2 class="font-display display-4 text-blue fw-semibold mb-4">
             Start a Confidential Conversation
         </h2>
         <p class="fs-5 mb-5 opacity-90">

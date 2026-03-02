@@ -6,22 +6,48 @@
 @use '../vars/variables' as *;
 
 // Text colors (Tailwind equivalents)
+.text-gray-100 { color: $gray-100; }
+.text-gray-200 { color: $gray-200; }
+.text-gray-300 { color: $gray-300; }
+.text-gray-400 { color: $gray-400; }
 .text-gray-500 { color: $gray-500; }
 .text-gray-600 { color: $gray-600; }
 .text-gray-700 { color: $gray-700; }
+.text-gray-800 { color: $gray-800; }
 .text-gray-900 { color: $gray-900; }
+.text-gray { color: $primary-color; }
+.text-blue { color: $secondary-color; }
+
+.bg-gray-100 { background-color: $gray-100; }
+.bg-gray-200 { background-color: $gray-200; }
+.bg-gray-300 { background-color: $gray-300; }
+.bg-gray-400 { background-color: $gray-400; }
+.bg-gray-500 { background-color: $gray-500; }
+.bg-gray-600 { background-color: $gray-600; }
+.bg-gray-700 { background-color: $gray-700; }
+.bg-gray-800 { background-color: $gray-800; }
+.bg-gray-900 { background-color: $gray-900; }
+.bg-gray { background-color: $primary-color; }
+
+.bg-blue-100 { background-color: $blue-100; }
+.bg-blue-200 { background-color: $blue-200; }
+.bg-blue-300 { background-color: $blue-300; }
+.bg-blue-400 { background-color: $blue-400; }
+.bg-blue-500 { background-color: $blue-500; }
+.bg-blue-600 { background-color: $blue-600; }
+.bg-blue-700 { background-color: $blue-700; }
+.bg-blue-800 { background-color: $blue-800; }
+.bg-blue-900 { background-color: $blue-900; }
+.bg-blue { background-color: $secondary-color; }
 
 // Background colors
-.bg-white-60 { background-color: rgba(255, 255, 255, 0.6); }
-.bg-gray-50 { background-color: $gray-100; }
-.bg-gray-900 { background-color: $gray-900; }
-.bg-red-500 { background-color: $red-500; }
-.bg-blue-500 { background-color: $blue-500; }
-.bg-green-500 { background-color: $green-500; }
-.bg-purple-500 { background-color: $purple-500; }
-.bg-orange-500 { background-color: $orange-500; }
-.bg-teal-500 { background-color: $teal-500; }
-.bg-yellow-500 { background-color: $yellow-500; }
+.bg-white-60 { background-color: rgba($white, 0.6); }
+.bg-red-500 { background-color: $red; }
+.bg-green-500 { background-color: $green; }
+.bg-purple-500 { background-color: $purple; }
+.bg-orange-500 { background-color: $orange; }
+.bg-teal-500 { background-color: $teal; }
+.bg-yellow-500 { background-color: $yellow; }
 
 // Badge colors
 .badge-blue { 
@@ -97,6 +123,7 @@
     height: 0.5rem;
     min-width: 0.5rem;
     min-height: 0.5rem;
+    border-radius: 50%;
 }
 
 // Size utilities (width & height)
@@ -158,10 +185,10 @@
 
 // Purple color utilities (Bootstrap doesn't have purple by default)
 .bg-purple {
-    background-color: $purple-500;
+    background-color: $purple;
 }
 .text-purple {
-    color: $purple-500;
+    color: $purple;
 }
 .bg-purple-subtle {
     background-color: #f3e8ff;

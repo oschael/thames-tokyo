@@ -4,12 +4,126 @@
 @use '../abstracts/colors' as *;
 @use '../vars/variables' as *;
 
+:root {
+  /* Bootstrap Display Headings */
+  --display-0-font-size: clamp(5rem, 10vw + 1rem, 10rem);
+  --display-1-font-size: clamp(3rem, 6vw + 1rem, 6rem);
+  --display-2-font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
+  --display-3-font-size: clamp(2rem, 4vw + 1rem, 4rem);
+  --display-4-font-size: clamp(1.5rem, 3vw + 1rem, 3rem);
+
+  /* HTML Headings */
+  --h1-font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+  --h2-font-size: clamp(1.75rem, 4vw + 0.875rem, 3rem);
+  --h3-font-size: clamp(1.5rem, 3.5vw + 0.75rem, 2.5rem);
+  --h4-font-size: clamp(1.25rem, 3vw + 0.625rem, 2rem);
+  --h5-font-size: clamp(1rem, 2.5vw + 0.5rem, 1.5rem);
+  --h6-font-size: clamp(0.875rem, 2vw + 0.375rem, 1.25rem);
+
+  /* Text */
+  --body-font-size: clamp(1rem, 2vw + 0.5rem, 1.125rem);
+  --small-font-size: clamp(0.75rem, 1.5vw + 0.375rem, 0.875rem);
+  --x-small-font-size: clamp(0.625rem, 1.25vw + 0.3125rem, 0.75rem);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-0, .display-1, .display-2, .display-3, .display-4 {
+	
+    color: rgba($primary-color, 1);
+	transition: $transition;
+    font-weight: $font-weight-bold;
+    display: block;
+    letter-spacing: -0.035em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Bootstrap Display Headings */
+.display-0 {
+  font-size: var(--display-0-font-size);
+}
+
+.display-1 {
+  font-size: var(--display-1-font-size);
+}
+
+.display-2 {
+  font-size: var(--display-2-font-size);
+}
+
+.display-3 {
+  font-size: var(--display-3-font-size);
+}
+
+.display-4 {
+  font-size: var(--display-4-font-size);
+}
+
+/* HTML Headings */
+h1, .h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2, .h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3, .h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4, .h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5, .h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6, .h6 {
+  font-size: var(--h6-font-size);
+}
+
+p,
+li {
+  font-size: var(--body-font-size);
+}
+
+small,
+.small {
+  font-size: var(--small-font-size) !important;
+}
+
+.x-small {
+  font-size: var(--x-small-font-size) !important;
+}
+
+ul {
+
+	&.small {
+  	
+		li {
+			font-size: var(--small-font-size) !important;
+		}
+	}
+
+  &.x-small {
+  	
+		li {
+			font-size: var(--x-small-font-size) !important;
+		}
+	}
+}
+
 .font-display {
     font-family: $font-family-primary;
 }
 
 .text-gradient {
-    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    background: linear-gradient(135deg, $primary-color 0%, $color-accent 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

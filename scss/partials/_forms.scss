@@ -21,7 +21,7 @@
 
 // Submit Button
 .submit-btn {
-    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    background: linear-gradient(135deg, $primary-color 0%, $color-accent 100%);
     transition: all $transition-base;
 
     &:hover {
@@ -45,7 +45,7 @@
 
 // Inquiry Button (Delicatessen page)
 .inquiry-btn {
-    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    background: linear-gradient(135deg, $primary-color 0%, $color-accent 100%);
     transition: opacity $transition-base;
 
     &:hover {
@@ -58,7 +58,7 @@
     transition: all $transition-base;
 
     &.active {
-        background-color: $color-primary;
+        background-color: $primary-color;
         color: white;
     }
 }
@@ -68,7 +68,7 @@
     cursor: pointer;
 
     &.active {
-        background-color: $color-primary;
+        background-color: $primary-color;
         color: white;
     }
 }
