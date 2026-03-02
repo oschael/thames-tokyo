@@ -1,0 +1,33 @@
+// ============================================
+// HOME PAGE - Specific styles for home.php
+// ============================================
+@use '../abstracts/colors' as *;
+@use '../vars/variables' as *;
+
+// Hero section
+.home-hero {
+    .hero-content {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+// Typed text cursor
+#typed-text {
+    &::after {
+        content: '|';
+        animation: blink 1s infinite;
+    }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+// Delicatessen carousel
+#delicatessen-carousel {
+    .splide__pagination {
+        bottom: -2rem;
+    }
+}

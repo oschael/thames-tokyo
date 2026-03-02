@@ -1,0 +1,83 @@
+// ============================================
+// HEADER - Navigation and header styles
+// ============================================
+@use '../abstracts/colors' as *;
+@use '../vars/variables' as *;
+
+// Fixed Navigation
+.navbar-tt {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    z-index: $z-index-nav;
+    border-bottom: 1px solid $gray-200;
+}
+
+// Navbar container
+.navbar-container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: $spacing-md $spacing-lg;
+}
+
+// Logo
+.navbar-logo {
+    height: 2rem;
+    width: auto;
+}
+
+// Nav links
+.nav-link {
+    position: relative;
+    transition: color $transition-base;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+    padding: $spacing-sm 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: $color-accent;
+        transition: width $transition-base;
+    }
+
+    &:hover {
+        color: $color-primary;
+        
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+// Mobile menu button
+.mobile-menu-btn {
+    display: block;
+    
+    @media (min-width: $breakpoint-md) {
+        display: none;
+    }
+}
+
+// Desktop nav
+.desktop-nav {
+    display: none;
+    gap: $spacing-xl;
+    
+    @media (min-width: $breakpoint-md) {
+        display: flex;
+    }
+}
+
+// Mobile menu
+#mobile-menu {
+    &.hidden {
+        display: none;
+    }
+}

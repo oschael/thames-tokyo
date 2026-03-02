@@ -1,0 +1,39 @@
+// ============================================
+// ACCESS STORIES PAGE - Specific styles
+// ============================================
+@use '../abstracts/colors' as *;
+@use '../vars/variables' as *;
+
+// Case study cards
+.case-study-card {
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    }
+
+    &.expanded {
+        transform: scale(1.02);
+    }
+}
+
+.case-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-base;
+
+    &.expanded {
+        max-height: 600px;
+    }
+}
+
+// Metric cards
+.metric-card {
+    transition: all $transition-base;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}

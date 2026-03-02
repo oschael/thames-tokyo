@@ -1,0 +1,42 @@
+// ============================================
+// DELICATESSEN PAGE - Specific styles
+// ============================================
+@use '../abstracts/colors' as *;
+@use '../vars/variables' as *;
+
+// Japan Map
+.japan-map {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.map-region {
+    cursor: pointer;
+    transition: all $transition-base;
+
+    &:hover {
+        fill: $color-accent;
+        opacity: 0.8;
+    }
+
+    &.active {
+        fill: $color-primary;
+    }
+}
+
+// Product grid
+.product-card {
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+// Access story block
+.access-story {
+    background: linear-gradient(135deg, $color-secondary 0%, #ffffff 100%);
+    border-left: 4px solid $color-accent;
+}

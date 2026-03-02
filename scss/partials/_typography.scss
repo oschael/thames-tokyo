@@ -1,6 +1,7 @@
 // ============================================
 // TYPOGRAPHY - Font styles and utilities
 // ============================================
+@use '../abstracts/colors' as *;
 @use '../vars/variables' as *;
 
 .font-display {

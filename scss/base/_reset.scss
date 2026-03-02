@@ -1,0 +1,71 @@
+// ============================================
+// RESET - Custom CSS Reset/Normalize
+// ============================================
+@use '../abstracts/colors' as *;
+@use '../vars/variables' as *;
+
+// Box sizing
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Remove default margin/padding
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+// Smooth scrolling
+html {
+    scroll-behavior: smooth;
+}
+
+// Remove list styles
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Remove link underlines
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Button reset
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    padding: 0;
+}
+
+// Image reset
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// Form element reset
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+// Remove textarea resize
+textarea {
+    resize: vertical;
+}
+
+// Table reset
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

@@ -1,0 +1,168 @@
+// ============================================
+// BUTTONS - Button component styles
+// ============================================
+@use '../abstracts/colors' as *;
+@use '../vars/variables' as *;
+
+// Primary button
+.btn-primary-tt {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray-900;
+    color: white;
+    padding: $spacing-md $spacing-xl;
+    border-radius: $border-radius-sm;
+    font-weight: $font-weight-semibold;
+    transition: background-color $transition-base;
+    
+    &:hover {
+        background-color: $gray-800;
+        color: white;
+    }
+    
+    svg {
+        margin-left: $spacing-sm;
+    }
+}
+
+// Secondary/outline button
+.btn-outline-tt {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    padding: $spacing-md $spacing-xl;
+    border: 2px solid white;
+    border-radius: $border-radius-sm;
+    font-weight: $font-weight-semibold;
+    transition: all $transition-base;
+    
+    &:hover {
+        background-color: white;
+        color: $gray-900;
+    }
+}
+
+// CTA button (gradient)
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    color: white;
+    padding: $spacing-md $spacing-xl;
+    border-radius: $border-radius-sm;
+    font-weight: $font-weight-semibold;
+    transition: all $transition-base;
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Submit Button
+.submit-btn {
+    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    transition: all $transition-base;
+    width: 100%;
+    color: white;
+    padding: $spacing-md $spacing-xl;
+    border-radius: $border-radius-lg;
+    font-weight: $font-weight-semibold;
+    font-size: 1.125rem;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .loading-text {
+        &.hidden {
+            display: none;
+        }
+    }
+}
+
+// Inquiry Button (Delicatessen page)
+.inquiry-btn {
+    background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
+    transition: opacity $transition-base;
+    color: white;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius-md;
+    font-weight: $font-weight-medium;
+    font-size: 0.875rem;
+    width: 100%;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+// Filter Buttons
+.filter-btn {
+    transition: all $transition-base;
+    padding: 0.75rem 1.5rem;
+    border-radius: $border-radius-full;
+    border: 1px solid $gray-300;
+    font-weight: $font-weight-medium;
+    background-color: transparent;
+
+    &.active {
+        background-color: $color-primary;
+        color: white;
+        border-color: $color-primary;
+    }
+    
+    &:hover:not(.active) {
+        border-color: $color-primary;
+    }
+}
+
+// Region filter buttons
+.region-filter {
+    transition: all $transition-base;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: $border-radius-full;
+    border: 1px solid $gray-300;
+    font-weight: $font-weight-medium;
+    background-color: transparent;
+
+    &.active {
+        background-color: $color-primary;
+        color: white;
+        border-color: $color-primary;
+    }
+    
+    &:hover:not(.active) {
+        border-color: $color-primary;
+    }
+}
+
+// Text link with arrow
+.link-arrow {
+    display: inline-flex;
+    align-items: center;
+    color: $gray-900;
+    font-weight: $font-weight-semibold;
+    transition: color $transition-base;
+    
+    svg {
+        margin-left: $spacing-sm;
+    }
+    
+    &:hover {
+        color: $gray-600;
+    }
+}

@@ -1,10 +1,10 @@
 <!-- Footer -->
-<footer class="py-8 px-6 bg-white border-t border-gray-200">
-  <div class="max-w-7xl mx-auto text-center">
-    <div class="font-display text-xl font-semibold text-gray-900 mb-4">
+<footer class="footer-tt">
+  <div class="footer-container">
+    <div class="footer-brand">
       Thames&Tokyo
     </div>
-    <p class="text-gray-600 text-sm">
+    <p class="footer-copyright">
       © <?php echo date('Y'); ?> Thames & Tokyo. Curating the inaccessible.
     </p>
   </div>

@@ -1,0 +1,81 @@
+// ============================================
+// GLOBALS - Global styles and CSS custom properties
+// ============================================
+@use '../abstracts/colors' as *;
+@use '../vars/variables' as *;
+
+// CSS Custom Properties for runtime manipulation
+:root {
+    // Brand Colors
+    --color-primary: #{$color-primary};
+    --color-secondary: #{$color-secondary};
+    --color-tertiary: #{$color-tertiary};
+    --color-accent: #{$color-accent};
+    --color-supporting: #{$color-supporting};
+    --color-text: #{$color-text};
+    
+    // Gray Scale
+    --gray-100: #{$gray-100};
+    --gray-200: #{$gray-200};
+    --gray-300: #{$gray-300};
+    --gray-400: #{$gray-400};
+    --gray-500: #{$gray-500};
+    --gray-600: #{$gray-600};
+    --gray-700: #{$gray-700};
+    --gray-800: #{$gray-800};
+    --gray-900: #{$gray-900};
+    
+    // Status Colors
+    --color-error: #{$color-error};
+    --color-success: #{$color-success};
+    --color-info: #{$color-info};
+    --color-warning: #{$color-warning};
+    
+    // Spacing
+    --spacing-xs: #{$spacing-xs};
+    --spacing-sm: #{$spacing-sm};
+    --spacing-md: #{$spacing-md};
+    --spacing-lg: #{$spacing-lg};
+    --spacing-xl: #{$spacing-xl};
+    --spacing-2xl: #{$spacing-2xl};
+    --spacing-3xl: #{$spacing-3xl};
+    
+    // Border Radius
+    --radius-sm: #{$border-radius-sm};
+    --radius-md: #{$border-radius-md};
+    --radius-lg: #{$border-radius-lg};
+    --radius-xl: #{$border-radius-xl};
+    --radius-full: #{$border-radius-full};
+    
+    // Shadows
+    --shadow-sm: #{$shadow-sm};
+    --shadow-md: #{$shadow-md};
+    --shadow-lg: #{$shadow-lg};
+    --shadow-xl: #{$shadow-xl};
+    
+    // Transitions
+    --transition-fast: #{$transition-fast};
+    --transition-base: #{$transition-base};
+    --transition-slow: #{$transition-slow};
+}
+
+// Body base styles
+body {
+    font-family: $font-family-primary;
+    background-color: lighten($color-tertiary, 1%);
+    color: $color-text;
+    line-height: $line-height-base;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Main content wrapper
+main {
+    min-height: calc(100vh - 200px);
+}
+
+// Selection style
+::selection {
+    background-color: rgba($color-secondary, 0.3);
+    color: $color-primary;
+}

@@ -129,7 +129,7 @@ function initMobileMenu() {
             }
             
             // Toggle menu visibility
-            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('d-none');
         });
     }
 }
@@ -137,15 +137,15 @@ function initMobileMenu() {
 function createMobileMenu() {
     const mobileMenu = document.createElement('div');
     mobileMenu.id = 'mobile-menu';
-    mobileMenu.className = 'md:hidden bg-white border-t border-gray-200 py-4 hidden';
+    mobileMenu.className = 'd-md-none bg-white border-top py-4 d-none';
     mobileMenu.innerHTML = `
-        <div class="px-6 space-y-4">
-            <a href="index.html" class="block text-gray-900 font-medium">Home</a>
-            <a href="about.html" class="block text-gray-600 hover:text-gray-900">About</a>
-            <a href="services.html" class="block text-gray-600 hover:text-gray-900">Services</a>
-            <a href="access-stories.html" class="block text-gray-600 hover:text-gray-900">Access Stories</a>
-            <a href="delicatessen.html" class="block text-gray-600 hover:text-gray-900">Delicatessen</a>
-            <a href="contact.html" class="block text-gray-600 hover:text-gray-900">Contact</a>
+        <div class="px-4 d-flex flex-column gap-3">
+            <a href="index.html" class="d-block text-dark fw-medium text-decoration-none">Home</a>
+            <a href="about.html" class="d-block text-secondary text-decoration-none">About</a>
+            <a href="services.html" class="d-block text-secondary text-decoration-none">Services</a>
+            <a href="access-stories.html" class="d-block text-secondary text-decoration-none">Access Stories</a>
+            <a href="delicatessen.html" class="d-block text-secondary text-decoration-none">Delicatessen</a>
+            <a href="contact.html" class="d-block text-secondary text-decoration-none">Contact</a>
         </div>
     `;
     return mobileMenu;

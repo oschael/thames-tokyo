@@ -1,20 +1,23 @@
 <?php
-$section = "Page nout found";
+$section = "Page not found";
 
 /* ========= CONTENIDO ========= */
 ob_start();
 ?>
 
 <!-- Hero Quote Section -->
-<section class="pt-32 pb-20 px-6">
+<section class="section-hero section-px">
     <div class="max-w-4xl mx-auto text-center">
         <div class="scroll-reveal">
-            <h1 class="font-display text-5xl md:text-6xl font-semibold text-gray-900 mb-12">
+            <h1 class="font-display display-1 fw-semibold text-gray-900 mb-5">
                 404
             </h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p class="fs-5 text-gray-600 max-w-3xl mx-auto mb-5">
                 The page you are looking for does not exist or is not available.
             </p>
+            <a href="/" class="btn-primary-tt">
+                Return to Home
+            </a>
         </div>
     </div>
 </section>
@@ -28,39 +31,8 @@ ob_start();
 ?>
 
 <script>
-    // Initialize timeline interactions
+    // Initialize scroll reveal
     document.addEventListener('DOMContentLoaded', function() {
-        const timelineItems = document.querySelectorAll('.timeline-item');
-        
-        timelineItems.forEach(item => {
-            item.addEventListener('click', function() {
-                const content = this.querySelector('.timeline-content');
-                const arrow = this.querySelector('svg');
-                const isExpanded = content.classList.contains('expanded');
-                
-                // Close all other items
-                timelineItems.forEach(otherItem => {
-                    if (otherItem !== this) {
-                        otherItem.classList.remove('active');
-                        otherItem.querySelector('.timeline-content').classList.remove('expanded');
-                        otherItem.querySelector('svg').style.transform = 'rotate(0deg)';
-                    }
-                });
-                
-                // Toggle current item
-                if (isExpanded) {
-                    this.classList.remove('active');
-                    content.classList.remove('expanded');
-                    arrow.style.transform = 'rotate(0deg)';
-                } else {
-                    this.classList.add('active');
-                    content.classList.add('expanded');
-                    arrow.style.transform = 'rotate(180deg)';
-                }
-            });
-        });
-        
-        // Initialize scroll reveal
         initScrollReveal();
     });
     

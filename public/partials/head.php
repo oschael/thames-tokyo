@@ -19,5 +19,8 @@
 <link rel="stylesheet" href="https://unpkg.com/splitting@1.0.6/dist/splitting.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="https://use.typekit.net/khd8vrc.css">
 <link rel="stylesheet" href="assets/css/main.min.css">

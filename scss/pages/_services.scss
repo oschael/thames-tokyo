@@ -1,0 +1,69 @@
+// ============================================
+// SERVICES PAGE - Specific styles for services.php
+// ============================================
+@use '../abstracts/colors' as *;
+@use '../vars/variables' as *;
+
+// Service cards
+.service-card {
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: $shadow-lg;
+    }
+
+    &.expanded {
+        transform: scale(1.02);
+    }
+}
+
+.service-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-base;
+
+    &.expanded {
+        max-height: 300px;
+    }
+}
+
+// Process steps
+.process-step {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -2rem;
+        width: 2rem;
+        height: 2px;
+        background-color: $color-accent;
+        transform: translateY(-50%);
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+
+    @media (max-width: $breakpoint-md) {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+// Sector cards
+.sector-card {
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+}

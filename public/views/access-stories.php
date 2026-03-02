@@ -6,13 +6,13 @@ ob_start();
 ?>
 
 <!-- Hero Section -->
-<section class="pt-32 pb-20 px-6">
-    <div class="max-w-4xl mx-auto text-center">
+<section class="section-py section-px pt-hero">
+    <div class="container-sm text-center">
         <div class="scroll-reveal">
-            <h1 class="font-display text-5xl md:text-6xl font-semibold text-gray-900 mb-8">
+            <h1 class="font-display fs-display fw-semibold text-dark mb-4">
                 Access Stories
             </h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p class="fs-5 text-muted mx-auto lh-lg" style="max-width: 48rem;">
                 Real partnerships that demonstrate how cultural understanding transforms impossible access into competitive advantage. Every story represents doors unlocked through trust, respect, and deep cultural knowledge.
             </p>
         </div>
@@ -20,59 +20,67 @@ ob_start();
 </section>
 
 <!-- Success Metrics Section -->
-<section class="py-20 px-6 bg-white">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16 scroll-reveal">
-            <h2 class="font-display text-4xl font-semibold text-gray-900 mb-6">
+<section class="section-py section-px bg-white">
+    <div class="container-tt">
+        <div class="text-center mb-5 scroll-reveal">
+            <h2 class="font-display fs-2 fw-semibold text-dark mb-3">
                 Proven Results
             </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p class="fs-5 text-muted mx-auto" style="max-width: 48rem;">
                 Numbers that tell the story of successful cultural bridge-building.
             </p>
         </div>
 
-        <div class="grid md:grid-cols-4 gap-8">
-            <div class="metric-card text-center scroll-reveal">
-                <div class="text-4xl font-display font-semibold text-gray-900 mb-2">98%</div>
-                <p class="text-gray-600">Client satisfaction rate</p>
+        <div class="row g-4">
+            <div class="col-md-3 text-center scroll-reveal">
+                <div class="metric-card">
+                    <div class="fs-2 font-display fw-semibold text-dark mb-2">98%</div>
+                    <p class="text-muted mb-0">Client satisfaction rate</p>
+                </div>
             </div>
-            <div class="metric-card text-center scroll-reveal">
-                <div class="text-4xl font-display font-semibold text-gray-900 mb-2">200+</div>
-                <p class="text-gray-600">Exclusive supplier relationships</p>
+            <div class="col-md-3 text-center scroll-reveal">
+                <div class="metric-card">
+                    <div class="fs-2 font-display fw-semibold text-dark mb-2">200+</div>
+                    <p class="text-muted mb-0">Exclusive supplier relationships</p>
+                </div>
             </div>
-            <div class="metric-card text-center scroll-reveal">
-                <div class="text-4xl font-display font-semibold text-gray-900 mb-2">15+</div>
-                <p class="text-gray-600">Years building trust</p>
+            <div class="col-md-3 text-center scroll-reveal">
+                <div class="metric-card">
+                    <div class="fs-2 font-display fw-semibold text-dark mb-2">15+</div>
+                    <p class="text-muted mb-0">Years building trust</p>
+                </div>
             </div>
-            <div class="metric-card text-center scroll-reveal">
-                <div class="text-4xl font-display font-semibold text-gray-900 mb-2">£50M+</div>
-                <p class="text-gray-600">Value of partnerships facilitated</p>
+            <div class="col-md-3 text-center scroll-reveal">
+                <div class="metric-card">
+                    <div class="fs-2 font-display fw-semibold text-dark mb-2">£50M+</div>
+                    <p class="text-muted mb-0">Value of partnerships facilitated</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Filter Section -->
-<section class="py-12 px-6">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-8 scroll-reveal">
-            <h2 class="font-display text-3xl font-semibold text-gray-900 mb-6">
+<section class="py-5 section-px">
+    <div class="container-tt">
+        <div class="text-center mb-4 scroll-reveal">
+            <h2 class="font-display fs-3 fw-semibold text-dark mb-4">
                 Stories by Sector
             </h2>
-            <div class="flex flex-wrap justify-center gap-4">
-                <button class="filter-btn active px-6 py-3 rounded-full border border-gray-300 font-medium" data-filter="all">
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button class="filter-btn active btn btn-outline-dark rounded-pill px-4 py-2" data-filter="all">
                     All Stories
                 </button>
-                <button class="filter-btn px-6 py-3 rounded-full border border-gray-300 font-medium" data-filter="pharma">
+                <button class="filter-btn btn btn-outline-dark rounded-pill px-4 py-2" data-filter="pharma">
                     Pharmaceutical
                 </button>
-                <button class="filter-btn px-6 py-3 rounded-full border border-gray-300 font-medium" data-filter="tech">
+                <button class="filter-btn btn btn-outline-dark rounded-pill px-4 py-2" data-filter="tech">
                     Technology
                 </button>
-                <button class="filter-btn px-6 py-3 rounded-full border border-gray-300 font-medium" data-filter="finance">
+                <button class="filter-btn btn btn-outline-dark rounded-pill px-4 py-2" data-filter="finance">
                     Finance
                 </button>
-                <button class="filter-btn px-6 py-3 rounded-full border border-gray-300 font-medium" data-filter="consumer">
+                <button class="filter-btn btn btn-outline-dark rounded-pill px-4 py-2" data-filter="consumer">
                     Consumer Products
                 </button>
             </div>
@@ -81,61 +89,61 @@ ob_start();
 </section>
 
 <!-- Case Studies Section -->
-<section class="py-20 px-6">
-    <div class="max-w-7xl mx-auto">
-        <div class="space-y-8" id="case-studies-container">
+<section class="section-py section-px">
+    <div class="container-tt">
+        <div class="d-flex flex-column gap-4" id="case-studies-container">
             
             <!-- Case Study 1: Pharmaceutical -->
-            <div class="case-study-card bg-white rounded-lg shadow-lg overflow-hidden" data-sector="pharma">
-                <div class="p-8">
-                    <div class="flex items-center justify-between mb-6">
-                        <div class="flex items-center space-x-4">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Pharmaceutical</span>
-                            <h3 class="font-display text-2xl font-semibold">Precision Equipment Partnership</h3>
+            <div class="case-study-card bg-white rounded-3 shadow overflow-hidden" data-sector="pharma">
+                <div class="p-4">
+                    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-4 gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">Pharmaceutical</span>
+                            <h3 class="font-display fs-4 fw-semibold mb-0">Precision Equipment Partnership</h3>
                         </div>
-                        <svg class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="text-muted transition-transform flex-shrink-0" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </div>
-                    <p class="text-gray-600 text-lg mb-4">
+                    <p class="text-muted fs-5 mb-3">
                         A FTSE 100 pharmaceutical company needed specialized manufacturing equipment that could meet both their quality standards and regulatory requirements. Through our network, we connected them with a family-owned manufacturer in Osaka that had never exported before.
                     </p>
                     <div class="case-details">
-                        <div class="border-t pt-6">
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-4">The Challenge</h4>
-                                    <p class="text-gray-700 mb-4">
+                        <div class="border-top pt-4">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Challenge</h4>
+                                    <p class="text-secondary mb-3">
                                         The client required precision equipment for pharmaceutical manufacturing with strict quality controls and regulatory compliance. Traditional Japanese suppliers were hesitant to work with foreign companies due to liability concerns and cultural differences in business practices.
                                     </p>
-                                    <h4 class="font-semibold text-lg mb-4">The Cultural Interface</h4>
-                                    <p class="text-gray-700">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Cultural Interface</h4>
+                                    <p class="text-secondary mb-0">
                                         We facilitated a series of meetings that helped both parties understand each other's expectations. The Japanese supplier learned about Western regulatory requirements and quality documentation, while the UK client gained appreciation for the supplier's commitment to perfection and their concerns about reputation.
                                     </p>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-4">The Outcome</h4>
-                                    <p class="text-gray-700 mb-4">
+                                <div class="col-md-6">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Outcome</h4>
+                                    <p class="text-secondary mb-3">
                                         The partnership resulted in equipment that exceeded the client's specifications and established a new export channel for the Japanese manufacturer. Three years later, this remains one of the client's most valued supplier relationships.
                                     </p>
-                                    <div class="bg-gray-50 p-4 rounded-lg">
-                                        <div class="flex justify-between items-center mb-2">
-                                            <span class="text-sm text-gray-600">Quality Rating</span>
-                                            <span class="font-semibold">9.8/10</span>
+                                    <div class="bg-light p-3 rounded-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="small text-muted">Quality Rating</span>
+                                            <span class="fw-semibold">9.8/10</span>
                                         </div>
-                                        <div class="flex justify-between items-center mb-2">
-                                            <span class="text-sm text-gray-600">Timeline Adherence</span>
-                                            <span class="font-semibold">98%</span>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="small text-muted">Timeline Adherence</span>
+                                            <span class="fw-semibold">98%</span>
                                         </div>
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-sm text-gray-600">Partnership Duration</span>
-                                            <span class="font-semibold">3+ years</span>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="small text-muted">Partnership Duration</span>
+                                            <span class="fw-semibold">3+ years</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-6">
-                                <p class="text-sm text-gray-500 italic">
+                            <div class="mt-4">
+                                <p class="small text-muted fst-italic mb-0">
                                     "Thames&Tokyo didn't just introduce us to a supplier—they helped us understand each other. What started as a single equipment purchase has evolved into a strategic partnership that gives us access to Japanese precision manufacturing capabilities." - Global Pharma Director
                                 </p>
                             </div>
@@ -145,56 +153,56 @@ ob_start();
             </div>
 
             <!-- Case Study 2: Technology -->
-            <div class="case-study-card bg-white rounded-lg shadow-lg overflow-hidden" data-sector="tech">
-                <div class="p-8">
-                    <div class="flex items-center justify-between mb-6">
-                        <div class="flex items-center space-x-4">
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Technology</span>
-                            <h3 class="font-display text-2xl font-semibold">Advanced Components Sourcing</h3>
+            <div class="case-study-card bg-white rounded-3 shadow overflow-hidden" data-sector="tech">
+                <div class="p-4">
+                    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-4 gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2">Technology</span>
+                            <h3 class="font-display fs-4 fw-semibold mb-0">Advanced Components Sourcing</h3>
                         </div>
-                        <svg class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="text-muted transition-transform flex-shrink-0" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </div>
-                    <p class="text-gray-600 text-lg mb-4">
+                    <p class="text-muted fs-5 mb-3">
                         A UK tech startup needed specialized electronic components for their IoT devices. The components were only available from a small manufacturer in Nagoya that had never worked with foreign companies and required significant technical customization.
                     </p>
                     <div class="case-details">
-                        <div class="border-t pt-6">
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-4">The Challenge</h4>
-                                    <p class="text-gray-700 mb-4">
+                        <div class="border-top pt-4">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Challenge</h4>
+                                    <p class="text-secondary mb-3">
                                         The Japanese manufacturer was skeptical about working with a young foreign startup, concerned about intellectual property protection and payment reliability. The technical requirements required custom development work they weren't comfortable undertaking for an unknown partner.
                                     </p>
-                                    <h4 class="font-semibold text-lg mb-4">The Cultural Interface</h4>
-                                    <p class="text-gray-700">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Cultural Interface</h4>
+                                    <p class="text-secondary mb-0">
                                         We arranged for the UK company to visit Japan for face-to-face meetings, demonstrating respect for Japanese business culture. We also structured the initial order as a prototype run with clear milestones, reducing risk for both parties.
                                     </p>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-4">The Outcome</h4>
-                                    <p class="text-gray-700 mb-4">
+                                <div class="col-md-6">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Outcome</h4>
+                                    <p class="text-secondary mb-3">
                                         The manufacturer not only delivered the custom components but became a technical partner in the product development process. The relationship has grown from a £50,000 initial order to over £2M in annual business.
                                     </p>
-                                    <div class="bg-gray-50 p-4 rounded-lg">
-                                        <div class="flex justify-between items-center mb-2">
-                                            <span class="text-sm text-gray-600">Development Time</span>
-                                            <span class="font-semibold">6 months</span>
+                                    <div class="bg-light p-3 rounded-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="small text-muted">Development Time</span>
+                                            <span class="fw-semibold">6 months</span>
                                         </div>
-                                        <div class="flex justify-between items-center mb-2">
-                                            <span class="text-sm text-gray-600">Quality Rating</span>
-                                            <span class="font-semibold">9.5/10</span>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="small text-muted">Quality Rating</span>
+                                            <span class="fw-semibold">9.5/10</span>
                                         </div>
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-sm text-gray-600">Growth Rate</span>
-                                            <span class="font-semibold">4000%</span>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="small text-muted">Growth Rate</span>
+                                            <span class="fw-semibold">4000%</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-6">
-                                <p class="text-sm text-gray-500 italic">
+                            <div class="mt-4">
+                                <p class="small text-muted fst-italic mb-0">
                                     "Without Thames&Tokyo, we would have never found this manufacturer, let alone built the relationship that has become central to our product strategy. They understood both our technical needs and the cultural approach needed to make the partnership work." - CTO, IoT Startup
                                 </p>
                             </div>
@@ -204,56 +212,56 @@ ob_start();
             </div>
 
             <!-- Case Study 3: Consumer Products -->
-            <div class="case-study-card bg-white rounded-lg shadow-lg overflow-hidden" data-sector="consumer">
-                <div class="p-8">
-                    <div class="flex items-center justify-between mb-6">
-                        <div class="flex items-center space-x-4">
-                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Consumer Products</span>
-                            <h3 class="font-display text-2xl font-semibold">Premium Food Brand Partnership</h3>
+            <div class="case-study-card bg-white rounded-3 shadow overflow-hidden" data-sector="consumer">
+                <div class="p-4">
+                    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-4 gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2">Consumer Products</span>
+                            <h3 class="font-display fs-4 fw-semibold mb-0">Premium Food Brand Partnership</h3>
                         </div>
-                        <svg class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="text-muted transition-transform flex-shrink-0" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </div>
-                    <p class="text-gray-600 text-lg mb-4">
+                    <p class="text-muted fs-5 mb-3">
                         A luxury food retailer wanted to source authentic Japanese artisanal products for their premium customer base. They needed suppliers who could provide consistent quality and storytelling that would resonate with discerning consumers.
                     </p>
                     <div class="case-details">
-                        <div class="border-t pt-6">
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-4">The Challenge</h4>
-                                    <p class="text-gray-700 mb-4">
+                        <div class="border-top pt-4">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Challenge</h4>
+                                    <p class="text-secondary mb-3">
                                         The retailer needed products with authentic stories and provenance, not mass-market items. Traditional suppliers were unwilling to share detailed information about their production methods or provide the storytelling content needed for premium positioning.
                                     </p>
-                                    <h4 class="font-semibold text-lg mb-4">The Cultural Interface</h4>
-                                    <p class="text-gray-700">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Cultural Interface</h4>
+                                    <p class="text-secondary mb-0">
                                         We connected the retailer with artisanal producers who understood the value of storytelling in Western luxury markets. We helped translate their traditional narratives into compelling brand stories while preserving authenticity.
                                     </p>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-4">The Outcome</h4>
-                                    <p class="text-gray-700 mb-4">
+                                <div class="col-md-6">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Outcome</h4>
+                                    <p class="text-secondary mb-3">
                                         The partnership launched with 12 premium products, each with rich storytelling content. The product line became the retailer's fastest-growing category and opened opportunities for exclusive seasonal collections.
                                     </p>
-                                    <div class="bg-gray-50 p-4 rounded-lg">
-                                        <div class="flex justify-between items-center mb-2">
-                                            <span class="text-sm text-gray-600">Product Lines</span>
-                                            <span class="font-semibold">12 initial</span>
+                                    <div class="bg-light p-3 rounded-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="small text-muted">Product Lines</span>
+                                            <span class="fw-semibold">12 initial</span>
                                         </div>
-                                        <div class="flex justify-between items-center mb-2">
-                                            <span class="text-sm text-gray-600">Sales Growth</span>
-                                            <span class="font-semibold">180% YoY</span>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="small text-muted">Sales Growth</span>
+                                            <span class="fw-semibold">180% YoY</span>
                                         </div>
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-sm text-gray-600">Customer Retention</span>
-                                            <span class="font-semibold">94%</span>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="small text-muted">Customer Retention</span>
+                                            <span class="fw-semibold">94%</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-6">
-                                <p class="text-sm text-gray-500 italic">
+                            <div class="mt-4">
+                                <p class="small text-muted fst-italic mb-0">
                                     "Thames&Tokyo gave us access to stories and products we never would have found on our own. The cultural understanding they brought to the partnership was as valuable as the products themselves." - Head of Product Development
                                 </p>
                             </div>
@@ -263,56 +271,56 @@ ob_start();
             </div>
 
             <!-- Case Study 4: Finance -->
-            <div class="case-study-card bg-white rounded-lg shadow-lg overflow-hidden" data-sector="finance">
-                <div class="p-8">
-                    <div class="flex items-center justify-between mb-6">
-                        <div class="flex items-center space-x-4">
-                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Finance</span>
-                            <h3 class="font-display text-2xl font-semibold">Investment Partnership Access</h3>
+            <div class="case-study-card bg-white rounded-3 shadow overflow-hidden" data-sector="finance">
+                <div class="p-4">
+                    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-4 gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="badge bg-purple-subtle text-purple rounded-pill px-3 py-2">Finance</span>
+                            <h3 class="font-display fs-4 fw-semibold mb-0">Investment Partnership Access</h3>
                         </div>
-                        <svg class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="text-muted transition-transform flex-shrink-0" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </div>
-                    <p class="text-gray-600 text-lg mb-4">
+                    <p class="text-muted fs-5 mb-3">
                         A UK investment firm sought access to Japanese fintech startups for their venture capital portfolio. They needed introductions to companies that weren't actively seeking foreign investment and required cultural navigation of Japan's unique startup ecosystem.
                     </p>
                     <div class="case-details">
-                        <div class="border-t pt-6">
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-4">The Challenge</h4>
-                                    <p class="text-gray-700 mb-4">
+                        <div class="border-top pt-4">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Challenge</h4>
+                                    <p class="text-secondary mb-3">
                                         Japanese startups were hesitant to engage with foreign investors due to concerns about loss of control and cultural misalignment. The investment firm lacked understanding of Japan's unique venture capital landscape and relationship-building requirements.
                                     </p>
-                                    <h4 class="font-semibold text-lg mb-4">The Cultural Interface</h4>
-                                    <p class="text-gray-700">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Cultural Interface</h4>
+                                    <p class="text-secondary mb-0">
                                         We facilitated introductions through trusted mutual contacts and helped structure investment terms that addressed Japanese concerns about partnership and long-term alignment. We also provided cultural coaching for due diligence meetings.
                                     </p>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-4">The Outcome</h4>
-                                    <p class="text-gray-700 mb-4">
+                                <div class="col-md-6">
+                                    <h4 class="fw-semibold fs-5 mb-3">The Outcome</h4>
+                                    <p class="text-secondary mb-3">
                                         The firm successfully invested in three promising fintech startups and established ongoing deal flow relationships with Japanese VCs. The cultural understanding gained has become a competitive advantage in subsequent investments.
                                     </p>
-                                    <div class="bg-gray-50 p-4 rounded-lg">
-                                        <div class="flex justify-between items-center mb-2">
-                                            <span class="text-sm text-gray-600">Initial Investments</span>
-                                            <span class="font-semibold">3 companies</span>
+                                    <div class="bg-light p-3 rounded-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="small text-muted">Initial Investments</span>
+                                            <span class="fw-semibold">3 companies</span>
                                         </div>
-                                        <div class="flex justify-between items-center mb-2">
-                                            <span class="text-sm text-gray-600">Portfolio Value</span>
-                                            <span class="font-semibold">£25M+</span>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="small text-muted">Portfolio Value</span>
+                                            <span class="fw-semibold">£25M+</span>
                                         </div>
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-sm text-gray-600">Deal Flow</span>
-                                            <span class="font-semibold">Ongoing</span>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="small text-muted">Deal Flow</span>
+                                            <span class="fw-semibold">Ongoing</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-6">
-                                <p class="text-sm text-gray-500 italic">
+                            <div class="mt-4">
+                                <p class="small text-muted fst-italic mb-0">
                                     "Thames&Tokyo didn't just open doors—they helped us understand how to walk through them respectfully. The cultural intelligence they provided has been invaluable for our entire Asian investment strategy." - Managing Partner
                                 </p>
                             </div>
@@ -325,19 +333,19 @@ ob_start();
 </section>
 
 <!-- CTA Section -->
-<section class="py-20 px-6 bg-gray-900 text-white">
-    <div class="max-w-4xl mx-auto text-center">
-        <h2 class="font-display text-4xl md:text-5xl font-semibold mb-6">
+<section class="section-py section-px bg-dark text-white">
+    <div class="container-sm text-center">
+        <h2 class="font-display fs-1 fw-semibold mb-3">
             Start Your Access Story
         </h2>
-        <p class="text-xl mb-8 opacity-90">
+        <p class="fs-5 mb-4 opacity-75">
             Every successful partnership begins with understanding your unique access challenge. Let's discuss how we can unlock Japan's hidden market for your business.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="contact.html" class="bg-white text-gray-900 px-8 py-4 rounded-sm font-semibold hover:bg-gray-100 transition-colors">
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+            <a href="contact.html" class="btn btn-light text-dark px-4 py-3 fw-semibold">
                 Discuss your access challenge
             </a>
-            <a href="delicatessen.html" class="border-2 border-white text-white px-8 py-4 rounded-sm font-semibold hover:bg-white hover:text-gray-900 transition-colors">
+            <a href="delicatessen.html" class="btn btn-outline-light px-4 py-3 fw-semibold">
                 Taste the quality
             </a>
         </div>

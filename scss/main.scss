@@ -3,27 +3,53 @@
 // ============================================
 // This file imports all partials and compiles
 // into the final CSS output.
+// Bootstrap 5 is loaded via CDN, this file
+// contains only custom styles and overrides.
 
-// Configuration
+// ============================================
+// ABSTRACTS - Variables, mixins, functions
+// ============================================
+@use 'abstracts/colors';
+@use 'abstracts/functions';
 @use 'vars/variables' as *;
+@use 'abstracts/mixins';
 
-// Base Styles
-@use 'partials/base';
-
-// Typography
+// ============================================
+// BASE - Reset, typography, globals, utilities
+// ============================================
+@use 'base/reset';
+@use 'base/globals';
 @use 'partials/typography';
+@use 'base/utilities';
 
-// Layout & Navigation
-@use 'partials/navigation';
+// ============================================
+// LAYOUT - Header, footer, grid
+// ============================================
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/grid';
 
-// Components
+// ============================================
+// COMPONENTS - Reusable UI elements
+// ============================================
+@use 'components/buttons';
 @use 'partials/cards';
 @use 'partials/forms';
 @use 'partials/hero';
 @use 'partials/components';
 
-// Animations
+// ============================================
+// ANIMATIONS
+// ============================================
 @use 'partials/animations';
 
-// Pages-specific styles
+// ============================================
+// PAGES - Page-specific styles
+// ============================================
+@use 'pages/home';
+@use 'pages/about';
+@use 'pages/services';
+@use 'pages/delicatessen';
+@use 'pages/access-stories';
 @use 'pages/contact';
+
