@@ -342,12 +342,12 @@ ob_start();
             Every successful partnership begins with understanding your unique access challenge. Let's discuss how we can unlock Japan's hidden market for your business.
         </p>
         <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-            <a href="contact.html" class="btn btn-light text-dark px-4 py-3 fw-semibold">
+            <a href="/contact" class="btn btn-light text-dark px-4 py-3 fw-semibold">
                 Discuss your access challenge
             </a>
-            <a href="delicatessen.html" class="btn btn-outline-light px-4 py-3 fw-semibold">
+            <!-- <a href="/delicatessen" class="btn btn-outline-light px-4 py-3 fw-semibold">
                 Taste the quality
-            </a>
+            </a> -->
         </div>
     </div>
 </section>

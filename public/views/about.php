@@ -356,7 +356,7 @@ ob_start();
                 When cultural understanding flows in both directions, the result is not just successful transactions, but lasting partnerships that create value for everyone involved.
             </p>
             <div class="mt-5">
-                <a href="contact.html" class="btn-primary-tt d-inline-flex align-items-center gap-2">
+                <a href="/contact" class="btn-primary-tt d-inline-flex align-items-center gap-2">
                     Start building your bridge
                     <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>

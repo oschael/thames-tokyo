@@ -291,10 +291,10 @@ ob_start();
             Every product in our delicatessen represents a relationship we've built with Japan's most exclusive suppliers. Let us help you access these quality standards for your business.
         </p>
         <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-            <a href="contact.html" class="btn btn-light text-dark px-4 py-3 fw-semibold">
+            <a href="/contact" class="btn btn-light text-dark px-4 py-3 fw-semibold">
                 Discuss sourcing for your business
             </a>
-            <a href="services.html" class="btn btn-outline-light px-4 py-3 fw-semibold">
+            <a href="/services" class="btn btn-outline-light px-4 py-3 fw-semibold">
                 Learn about our services
             </a>
         </div>
