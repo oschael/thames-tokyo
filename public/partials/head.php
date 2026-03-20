@@ -24,3 +24,13 @@
 
 <link rel="stylesheet" href="https://use.typekit.net/khd8vrc.css">
 <link rel="stylesheet" href="assets/css/main.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4W2D3BHSEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4W2D3BHSEH');
+</script>
